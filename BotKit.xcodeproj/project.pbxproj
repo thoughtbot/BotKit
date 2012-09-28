@@ -9,7 +9,14 @@
 /* Begin PBXBuildFile section */
 		4DFEB0ED16164E1900685D38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DFEB0EC16164E1900685D38 /* Foundation.framework */; };
 		4DFEB0F216164E1900685D38 /* BotKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFEB0F116164E1900685D38 /* BotKit.h */; };
-		4DFEB0F416164E1900685D38 /* BotKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEB0F316164E1900685D38 /* BotKit.m */; };
+		4DFEB10E1616518300685D38 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DFEB10D1616518300685D38 /* CoreData.framework */; };
+		4DFEB1101616519F00685D38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DFEB10F1616519F00685D38 /* UIKit.framework */; };
+		4DFEB130161654D600685D38 /* BKCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEB126161654D600685D38 /* BKCoreDataManager.m */; };
+		4DFEB131161654D600685D38 /* BKManagedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEB128161654D600685D38 /* BKManagedViewController.m */; };
+		4DFEB132161654D600685D38 /* BKManagedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEB12A161654D600685D38 /* BKManagedTableViewController.m */; };
+		4DFEB133161654D600685D38 /* NSArray+ObjectAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEB12C161654D600685D38 /* NSArray+ObjectAccess.m */; };
+		4DFEB134161654D600685D38 /* NSDate+RelativeDates.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEB12E161654D600685D38 /* NSDate+RelativeDates.m */; };
+		4DFEB137161655F300685D38 /* NSObject+Coding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEB136161655F300685D38 /* NSObject+Coding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,7 +37,20 @@
 		4DFEB0EC16164E1900685D38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4DFEB0F016164E1900685D38 /* BotKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BotKit-Prefix.pch"; sourceTree = "<group>"; };
 		4DFEB0F116164E1900685D38 /* BotKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BotKit.h; sourceTree = "<group>"; };
-		4DFEB0F316164E1900685D38 /* BotKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BotKit.m; sourceTree = "<group>"; };
+		4DFEB10D1616518300685D38 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4DFEB10F1616519F00685D38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4DFEB125161654D600685D38 /* BKCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCoreDataManager.h; sourceTree = "<group>"; };
+		4DFEB126161654D600685D38 /* BKCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCoreDataManager.m; sourceTree = "<group>"; };
+		4DFEB127161654D600685D38 /* BKManagedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKManagedViewController.h; sourceTree = "<group>"; };
+		4DFEB128161654D600685D38 /* BKManagedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKManagedViewController.m; sourceTree = "<group>"; };
+		4DFEB129161654D600685D38 /* BKManagedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKManagedTableViewController.h; sourceTree = "<group>"; };
+		4DFEB12A161654D600685D38 /* BKManagedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKManagedTableViewController.m; sourceTree = "<group>"; };
+		4DFEB12B161654D600685D38 /* NSArray+ObjectAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ObjectAccess.h"; sourceTree = "<group>"; };
+		4DFEB12C161654D600685D38 /* NSArray+ObjectAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ObjectAccess.m"; sourceTree = "<group>"; };
+		4DFEB12D161654D600685D38 /* NSDate+RelativeDates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RelativeDates.h"; sourceTree = "<group>"; };
+		4DFEB12E161654D600685D38 /* NSDate+RelativeDates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RelativeDates.m"; sourceTree = "<group>"; };
+		4DFEB135161655F300685D38 /* NSObject+Coding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Coding.h"; sourceTree = "<group>"; };
+		4DFEB136161655F300685D38 /* NSObject+Coding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Coding.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DFEB1101616519F00685D38 /* UIKit.framework in Frameworks */,
+				4DFEB10E1616518300685D38 /* CoreData.framework in Frameworks */,
 				4DFEB0ED16164E1900685D38 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,6 +87,8 @@
 		4DFEB0EB16164E1900685D38 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4DFEB10F1616519F00685D38 /* UIKit.framework */,
+				4DFEB10D1616518300685D38 /* CoreData.framework */,
 				4DFEB0EC16164E1900685D38 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -74,7 +98,13 @@
 			isa = PBXGroup;
 			children = (
 				4DFEB0F116164E1900685D38 /* BotKit.h */,
-				4DFEB0F316164E1900685D38 /* BotKit.m */,
+				4DFEB125161654D600685D38 /* BKCoreDataManager.h */,
+				4DFEB126161654D600685D38 /* BKCoreDataManager.m */,
+				4DFEB127161654D600685D38 /* BKManagedViewController.h */,
+				4DFEB128161654D600685D38 /* BKManagedViewController.m */,
+				4DFEB129161654D600685D38 /* BKManagedTableViewController.h */,
+				4DFEB12A161654D600685D38 /* BKManagedTableViewController.m */,
+				4DFEB1381616566800685D38 /* Categories */,
 				4DFEB0EF16164E1900685D38 /* Supporting Files */,
 			);
 			path = BotKit;
@@ -86,6 +116,19 @@
 				4DFEB0F016164E1900685D38 /* BotKit-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DFEB1381616566800685D38 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4DFEB135161655F300685D38 /* NSObject+Coding.h */,
+				4DFEB136161655F300685D38 /* NSObject+Coding.m */,
+				4DFEB12B161654D600685D38 /* NSArray+ObjectAccess.h */,
+				4DFEB12C161654D600685D38 /* NSArray+ObjectAccess.m */,
+				4DFEB12D161654D600685D38 /* NSDate+RelativeDates.h */,
+				4DFEB12E161654D600685D38 /* NSDate+RelativeDates.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +182,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DFEB0F416164E1900685D38 /* BotKit.m in Sources */,
+				4DFEB130161654D600685D38 /* BKCoreDataManager.m in Sources */,
+				4DFEB131161654D600685D38 /* BKManagedViewController.m in Sources */,
+				4DFEB132161654D600685D38 /* BKManagedTableViewController.m in Sources */,
+				4DFEB133161654D600685D38 /* NSArray+ObjectAccess.m in Sources */,
+				4DFEB134161654D600685D38 /* NSDate+RelativeDates.m in Sources */,
+				4DFEB137161655F300685D38 /* NSObject+Coding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +248,7 @@
 				GCC_PREFIX_HEADER = "BotKit/BotKit-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -212,6 +261,7 @@
 				GCC_PREFIX_HEADER = "BotKit/BotKit-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

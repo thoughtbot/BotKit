@@ -6,8 +6,9 @@
 //  Copyright (c) 2012 thoughtbot. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-@interface BotKit : NSObject
-
-@end
+#import <BotKit/BKCoreDataManager.h>
+#import <BotKit/BKManagedViewController.h>
+#import <BotKit/BKManagedTableViewController.h>
+#import <BotKit/NSObject+Coding.h>
+#import <BotKit/NSArray+ObjectAccess.h>
+#import <BotKit/NSDate+RelativeDates.h>

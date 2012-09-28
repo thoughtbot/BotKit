@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'BotKit' target in the 'BotKit' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

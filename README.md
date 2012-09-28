@@ -9,7 +9,7 @@ The fastest way to get started with BotKit in your project is by adding it as a 
 1. Simply clone the library into your app's directory tree.
 
 		$ cd YourProject
-		$ git submodule add git@github.com/thoughtbot/botkit.git
+		$ git submodule add git@github.com:thoughtbot/botkit.git
 
 2. Add `BotKit.xcodeproj` to your project.
 

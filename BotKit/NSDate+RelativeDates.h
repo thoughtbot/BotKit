@@ -21,5 +21,7 @@
 
 // Determines if the receiver falls between 00:00:00 and 23:59:59 for the current date
 - (BOOL)isToday;
+- (BOOL)isBeforeDate:(NSDate *)date;
+- (BOOL)isAfterDate:(NSDate *)date;
 
 @end

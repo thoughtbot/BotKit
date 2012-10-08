@@ -38,6 +38,22 @@
     return NO;
 }
 
+- (BOOL)isBeforeDate:(NSDate *)date
+{
+    if ([self compare:date] == NSOrderedAscending)
+        return YES;
+
+    return NO;
+}
+
+- (BOOL)isAfterDate:(NSDate *)date
+{
+    if ([self compare:date] == NSOrderedDescending)
+        return YES;
+
+    return NO;
+}
+
 #pragma mark - Private Helpers
 + (NSDate *)dateThatIsNumberOfDaysFromToday:(NSInteger)numberOfDays
 {

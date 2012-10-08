@@ -285,6 +285,7 @@
 				4DFEB0F916164E1900685D38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

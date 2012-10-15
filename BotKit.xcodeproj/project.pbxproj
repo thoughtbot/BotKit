@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DF2E717162C8EB90041F4D2 /* UIColor+Serialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2E716162C8EB90041F4D2 /* UIColor+Serialization.m */; };
+		4DF2E71A162C8EC90041F4D2 /* UIColor+AdjustColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2E719162C8EC90041F4D2 /* UIColor+AdjustColor.m */; };
+		4DF2E71D162C940B0041F4D2 /* NSArray+Filtering.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2E71C162C940B0041F4D2 /* NSArray+Filtering.m */; };
 		4DFEB0ED16164E1900685D38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DFEB0EC16164E1900685D38 /* Foundation.framework */; };
 		4DFEB0F216164E1900685D38 /* BotKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFEB0F116164E1900685D38 /* BotKit.h */; };
 		4DFEB10E1616518300685D38 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DFEB10D1616518300685D38 /* CoreData.framework */; };
@@ -33,6 +36,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4DF2E715162C8EB90041F4D2 /* UIColor+Serialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Serialization.h"; sourceTree = "<group>"; };
+		4DF2E716162C8EB90041F4D2 /* UIColor+Serialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Serialization.m"; sourceTree = "<group>"; };
+		4DF2E718162C8EC90041F4D2 /* UIColor+AdjustColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AdjustColor.h"; sourceTree = "<group>"; };
+		4DF2E719162C8EC90041F4D2 /* UIColor+AdjustColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AdjustColor.m"; sourceTree = "<group>"; };
+		4DF2E71B162C940B0041F4D2 /* NSArray+Filtering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Filtering.h"; sourceTree = "<group>"; };
+		4DF2E71C162C940B0041F4D2 /* NSArray+Filtering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Filtering.m"; sourceTree = "<group>"; };
 		4DFEB0E916164E1900685D38 /* libBotKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBotKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DFEB0EC16164E1900685D38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4DFEB0F016164E1900685D38 /* BotKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BotKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -121,12 +130,18 @@
 		4DFEB1381616566800685D38 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				4DF2E718162C8EC90041F4D2 /* UIColor+AdjustColor.h */,
+				4DF2E719162C8EC90041F4D2 /* UIColor+AdjustColor.m */,
+				4DF2E715162C8EB90041F4D2 /* UIColor+Serialization.h */,
+				4DF2E716162C8EB90041F4D2 /* UIColor+Serialization.m */,
 				4DFEB135161655F300685D38 /* NSObject+Coding.h */,
 				4DFEB136161655F300685D38 /* NSObject+Coding.m */,
 				4DFEB12B161654D600685D38 /* NSArray+ObjectAccess.h */,
 				4DFEB12C161654D600685D38 /* NSArray+ObjectAccess.m */,
 				4DFEB12D161654D600685D38 /* NSDate+RelativeDates.h */,
 				4DFEB12E161654D600685D38 /* NSDate+RelativeDates.m */,
+				4DF2E71B162C940B0041F4D2 /* NSArray+Filtering.h */,
+				4DF2E71C162C940B0041F4D2 /* NSArray+Filtering.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -188,6 +203,9 @@
 				4DFEB133161654D600685D38 /* NSArray+ObjectAccess.m in Sources */,
 				4DFEB134161654D600685D38 /* NSDate+RelativeDates.m in Sources */,
 				4DFEB137161655F300685D38 /* NSObject+Coding.m in Sources */,
+				4DF2E717162C8EB90041F4D2 /* UIColor+Serialization.m in Sources */,
+				4DF2E71A162C8EC90041F4D2 /* UIColor+AdjustColor.m in Sources */,
+				4DF2E71D162C940B0041F4D2 /* NSArray+Filtering.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

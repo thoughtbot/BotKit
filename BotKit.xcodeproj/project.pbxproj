@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DD67725162CBB8F005799BD /* BKCoreDataManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFEB125161654D600685D38 /* BKCoreDataManager.h */; };
+		4DD67726162CBB8F005799BD /* BKManagedViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFEB127161654D600685D38 /* BKManagedViewController.h */; };
+		4DD67727162CBB8F005799BD /* BKManagedTableViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFEB129161654D600685D38 /* BKManagedTableViewController.h */; };
+		4DD67728162CBB8F005799BD /* UIColor+AdjustColor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DF2E718162C8EC90041F4D2 /* UIColor+AdjustColor.h */; };
+		4DD67729162CBB8F005799BD /* UIColor+Serialization.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DF2E715162C8EB90041F4D2 /* UIColor+Serialization.h */; };
+		4DD6772A162CBB8F005799BD /* NSObject+Coding.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFEB135161655F300685D38 /* NSObject+Coding.h */; };
+		4DD6772B162CBB8F005799BD /* NSArray+ObjectAccess.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFEB12B161654D600685D38 /* NSArray+ObjectAccess.h */; };
+		4DD6772C162CBB8F005799BD /* NSDate+RelativeDates.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFEB12D161654D600685D38 /* NSDate+RelativeDates.h */; };
+		4DD6772D162CBB8F005799BD /* NSArray+Filtering.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DF2E71B162C940B0041F4D2 /* NSArray+Filtering.h */; };
 		4DF2E717162C8EB90041F4D2 /* UIColor+Serialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2E716162C8EB90041F4D2 /* UIColor+Serialization.m */; };
 		4DF2E71A162C8EC90041F4D2 /* UIColor+AdjustColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2E719162C8EC90041F4D2 /* UIColor+AdjustColor.m */; };
 		4DF2E71D162C940B0041F4D2 /* NSArray+Filtering.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2E71C162C940B0041F4D2 /* NSArray+Filtering.m */; };
@@ -29,6 +38,15 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				4DD67725162CBB8F005799BD /* BKCoreDataManager.h in CopyFiles */,
+				4DD67726162CBB8F005799BD /* BKManagedViewController.h in CopyFiles */,
+				4DD67727162CBB8F005799BD /* BKManagedTableViewController.h in CopyFiles */,
+				4DD67728162CBB8F005799BD /* UIColor+AdjustColor.h in CopyFiles */,
+				4DD67729162CBB8F005799BD /* UIColor+Serialization.h in CopyFiles */,
+				4DD6772A162CBB8F005799BD /* NSObject+Coding.h in CopyFiles */,
+				4DD6772B162CBB8F005799BD /* NSArray+ObjectAccess.h in CopyFiles */,
+				4DD6772C162CBB8F005799BD /* NSDate+RelativeDates.h in CopyFiles */,
+				4DD6772D162CBB8F005799BD /* NSArray+Filtering.h in CopyFiles */,
 				4DFEB0F216164E1900685D38 /* BotKit.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

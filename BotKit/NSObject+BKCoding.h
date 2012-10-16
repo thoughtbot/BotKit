@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Mark Adams. All rights reserved.
 //
 
-@interface NSObject (Coding)
+@interface NSObject (BKCoding)
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 

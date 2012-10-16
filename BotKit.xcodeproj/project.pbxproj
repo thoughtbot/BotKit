@@ -13,7 +13,7 @@
 		4D56201C162DB3AF00D633B7 /* BKManagedTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFEB129161654D600685D38 /* BKManagedTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D56201D162DB3AF00D633B7 /* UIColor+AdjustColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DF2E718162C8EC90041F4D2 /* UIColor+AdjustColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D56201E162DB3AF00D633B7 /* UIColor+Serialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DF2E715162C8EB90041F4D2 /* UIColor+Serialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D56201F162DB3AF00D633B7 /* NSObject+Coding.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFEB135161655F300685D38 /* NSObject+Coding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D56201F162DB3AF00D633B7 /* NSObject+BKCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFEB135161655F300685D38 /* NSObject+BKCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D562020162DB3AF00D633B7 /* NSArray+ObjectAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFEB12B161654D600685D38 /* NSArray+ObjectAccess.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D562021162DB3AF00D633B7 /* NSDate+RelativeDates.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFEB12D161654D600685D38 /* NSDate+RelativeDates.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D562022162DB3AF00D633B7 /* NSArray+Filtering.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DF2E71B162C940B0041F4D2 /* NSArray+Filtering.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,7 +28,7 @@
 		4DFEB132161654D600685D38 /* BKManagedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEB12A161654D600685D38 /* BKManagedTableViewController.m */; };
 		4DFEB133161654D600685D38 /* NSArray+ObjectAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEB12C161654D600685D38 /* NSArray+ObjectAccess.m */; };
 		4DFEB134161654D600685D38 /* NSDate+RelativeDates.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEB12E161654D600685D38 /* NSDate+RelativeDates.m */; };
-		4DFEB137161655F300685D38 /* NSObject+Coding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEB136161655F300685D38 /* NSObject+Coding.m */; };
+		4DFEB137161655F300685D38 /* NSObject+BKCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DFEB136161655F300685D38 /* NSObject+BKCoding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -66,8 +66,8 @@
 		4DFEB12C161654D600685D38 /* NSArray+ObjectAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ObjectAccess.m"; sourceTree = "<group>"; };
 		4DFEB12D161654D600685D38 /* NSDate+RelativeDates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+RelativeDates.h"; sourceTree = "<group>"; };
 		4DFEB12E161654D600685D38 /* NSDate+RelativeDates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+RelativeDates.m"; sourceTree = "<group>"; };
-		4DFEB135161655F300685D38 /* NSObject+Coding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Coding.h"; sourceTree = "<group>"; };
-		4DFEB136161655F300685D38 /* NSObject+Coding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Coding.m"; sourceTree = "<group>"; };
+		4DFEB135161655F300685D38 /* NSObject+BKCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BKCoding.h"; sourceTree = "<group>"; };
+		4DFEB136161655F300685D38 /* NSObject+BKCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BKCoding.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +142,8 @@
 				4DF2E719162C8EC90041F4D2 /* UIColor+AdjustColor.m */,
 				4DF2E715162C8EB90041F4D2 /* UIColor+Serialization.h */,
 				4DF2E716162C8EB90041F4D2 /* UIColor+Serialization.m */,
-				4DFEB135161655F300685D38 /* NSObject+Coding.h */,
-				4DFEB136161655F300685D38 /* NSObject+Coding.m */,
+				4DFEB135161655F300685D38 /* NSObject+BKCoding.h */,
+				4DFEB136161655F300685D38 /* NSObject+BKCoding.m */,
 				4DFEB12B161654D600685D38 /* NSArray+ObjectAccess.h */,
 				4DFEB12C161654D600685D38 /* NSArray+ObjectAccess.m */,
 				4DFEB12D161654D600685D38 /* NSDate+RelativeDates.h */,
@@ -167,7 +167,7 @@
 				4D56201C162DB3AF00D633B7 /* BKManagedTableViewController.h in Headers */,
 				4D56201D162DB3AF00D633B7 /* UIColor+AdjustColor.h in Headers */,
 				4D56201E162DB3AF00D633B7 /* UIColor+Serialization.h in Headers */,
-				4D56201F162DB3AF00D633B7 /* NSObject+Coding.h in Headers */,
+				4D56201F162DB3AF00D633B7 /* NSObject+BKCoding.h in Headers */,
 				4D562020162DB3AF00D633B7 /* NSArray+ObjectAccess.h in Headers */,
 				4D562021162DB3AF00D633B7 /* NSDate+RelativeDates.h in Headers */,
 				4D562022162DB3AF00D633B7 /* NSArray+Filtering.h in Headers */,
@@ -231,7 +231,7 @@
 				4DFEB132161654D600685D38 /* BKManagedTableViewController.m in Sources */,
 				4DFEB133161654D600685D38 /* NSArray+ObjectAccess.m in Sources */,
 				4DFEB134161654D600685D38 /* NSDate+RelativeDates.m in Sources */,
-				4DFEB137161655F300685D38 /* NSObject+Coding.m in Sources */,
+				4DFEB137161655F300685D38 /* NSObject+BKCoding.m in Sources */,
 				4DF2E717162C8EB90041F4D2 /* UIColor+Serialization.m in Sources */,
 				4DF2E71A162C8EC90041F4D2 /* UIColor+AdjustColor.m in Sources */,
 				4DF2E71D162C940B0041F4D2 /* NSArray+Filtering.m in Sources */,

@@ -8,7 +8,7 @@
 
 #import "NSObject+Coding.h"
 
-@implementation NSObject (Coding)
+@implementation NSObject (BKCoding)
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 {

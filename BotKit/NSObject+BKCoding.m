@@ -6,13 +6,15 @@
 //  Copyright (c) 2012 Mark Adams. All rights reserved.
 //
 
-#import "NSObject+Coding.h"
+#import "NSObject+BKCoding.h"
 
 @implementation NSObject (BKCoding)
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 {
-    if (!(self = [self init])) return nil;
+    self = [self init];
+
+    if (!self) return nil;
     
     [self setValuesForKeysWithDictionary:dictionary];
     
@@ -28,15 +30,22 @@
 {
     NSAssert1([objectClass respondsToSelector:@selector(initWithDictionary:)], @"%@ does not respond to initWithDictionary:", NSStringFromClass(objectClass));
     
-    NSArray *keyedObjects = [self arrayOfDictionariesForKey:key];
-    if (!keyedObjects || ![keyedObjects isKindOfClass:[NSArray class]] || !keyedObjects.count)
+    NSArray *dictionaries = [self arrayOfDictionariesForKey:key];
+    
+    if (!dictionaries || ![dictionaries isKindOfClass:[NSArray class]] || !dictionaries.count)
         return nil;
     
     id newObject = nil;
     NSMutableArray *newObjects = [NSMutableArray array];
-    for (NSDictionary *keyedObject in keyedObjects)
-        if ((newObject = [[objectClass alloc] initWithDictionary:keyedObject]))
-            [newObjects addObject:newObject];
+    
+    for (NSDictionary *dictionary in dictionaries)
+    {
+        newObject = [[objectClass alloc] initWithDictionary:dictionary];
+        
+        if (!newObject) continue;
+
+        [newObjects addObject:newObject];
+    }
     
     if (!newObjects.count)
         return nil;
@@ -53,9 +62,15 @@
     
 	id newObject = nil;
     NSMutableArray *newObjects = [NSMutableArray array];
-    for (NSDictionary *keyedObject in (NSArray *)self)
-        if ((newObject = [[objectClass alloc] initWithDictionary:keyedObject]))
-            [newObjects addObject:newObject];
+    
+    for (NSDictionary *dictionary in (NSArray *)self)
+    {
+        newObject = [[objectClass alloc] initWithDictionary:dictionary];
+        
+        if (!newObject) continue;
+        
+        [newObjects addObject:newObject];
+    }
     
     if (!newObjects.count)
         return nil;
@@ -65,22 +80,28 @@
 
 - (NSArray *)arrayOfDictionariesForKey:(NSString *)key;
 {
-    NSArray *allegedDictionaries = [self valueForKey:key assertingClass:[NSArray class]];
-    if ([self contentsOfCollection:allegedDictionaries areKindOfClass:[NSDictionary class]])
-        return allegedDictionaries;
+    NSArray *possibleDictionaries = [self valueForKey:key assertingClass:[NSArray class]];
     
-    NSAssert(NO, @"Collection does not contain only dictionaries");
-    return nil;
+    if (![self contentsOfCollection:possibleDictionaries areKindOfClass:[NSDictionary class]])
+    {
+        NSAssert(NO, @"Collection does not contain only dictionaries");
+        return nil;
+    }
+
+    return possibleDictionaries;
 }
 
 - (NSArray *)arrayOfStringsForKey:(NSString *)key;
 {
-    NSArray *allegedStrings = [self valueForKey:key assertingClass:[NSArray class]];
-    if ([self contentsOfCollection:allegedStrings areKindOfClass:[NSString class]])
-        return allegedStrings;
+    NSArray *possibleStrings = [self valueForKey:key assertingClass:[NSArray class]];
     
-    NSAssert(NO, @"Collection does not contain only strings");
-    return nil;
+    if (![self contentsOfCollection:possibleStrings areKindOfClass:[NSString class]])
+    {
+        NSAssert(NO, @"Collection does not contain only strings");
+        return nil;
+    }
+
+    return possibleStrings;
 }
 
 - (BOOL)boolForKey:(NSString *)key;
@@ -96,8 +117,12 @@
 - (NSDate *)dateForKey:(NSString *)key;
 {
     id value = [self valueForKey:key];
-    if (!value || value == (id)[NSNull null]) return nil;
-    if ([value isKindOfClass:[NSDate class]]) return value;
+    
+    if (!value || value == (id)[NSNull null])
+        return nil;
+    
+    if ([value isKindOfClass:[NSDate class]])
+        return value;
     
     if ([value isKindOfClass:[NSString class]])
         return [[[NSDateFormatter alloc] init] dateFromString:value];
@@ -143,29 +168,54 @@
 - (NSURL *)URLForKey:(NSString *)key;
 {
 	id stringValue = [self valueForKey:key assertingClass:[NSString class]];
-    return stringValue ? [NSURL URLWithString:stringValue] : nil;
+
+    if (!stringValue)
+        return nil;
+    
+    return [NSURL URLWithString:stringValue];
 }
 
-- (id)valueForKey:(NSString *)key assertingClass:(Class)theClass;
+- (id)valueForKey:(NSString *)key assertingClass:(Class)class;
 {
     id value = [self valueForKey:key];
-    if (!value || value == [NSNull null]) return nil;
-    NSAssert2([value isKindOfClass:theClass], @"Method expects an object of class %@, but class of return value is %@", NSStringFromClass(theClass), NSStringFromClass([value class]));
-    return [value isKindOfClass:theClass] ? value : nil;
+    
+    if (!value || value == [NSNull null])
+        return nil;
+    
+    if (![value isKindOfClass:class])
+    {
+        NSAssert2(NO, @"Method expects an object of class %@, but class of return value is %@", NSStringFromClass(class), NSStringFromClass([value class]));
+        return nil;
+    }
+    
+    return value;
 }
 
-- (id)valueForKey:(NSString *)key assertingRespondsToSelector:(SEL)theSelector;
+- (id)valueForKey:(NSString *)key assertingRespondsToSelector:(SEL)selector;
 {
     id value = [self valueForKey:key];
-    if (!value || value == [NSNull null]) return nil;
-    NSAssert2([value respondsToSelector:theSelector], @"Object of class %@ does not respond to selector %@", NSStringFromClass([value class]), NSStringFromSelector(theSelector));
-    return [value respondsToSelector:theSelector] ? value : nil;
+    
+    if (!value || value == [NSNull null])
+        return nil;
+
+    if (![value respondsToSelector:selector])
+    {
+        NSAssert2(NO, @"Object of class: %@ does not respond to selector: %@", NSStringFromClass([value class]), NSStringFromSelector(selector));
+        return nil;
+    }
+    
+    return value;
 }
 
 - (BOOL)contentsOfCollection:(id <NSFastEnumeration>)theCollection areKindOfClass:(Class)theClass;
 {
-    for (id theObject in theCollection) if (![theObject isKindOfClass:theClass]) return NO;
-    return YES;    
+    BOOL areKindOfClass = YES;
+    
+    for (id theObject in theCollection)
+        if (![theObject isKindOfClass:theClass])
+            return areKindOfClass = NO;
+    
+    return areKindOfClass;
 }
 
 @end

@@ -28,7 +28,7 @@
 - (NSURL *)URLForKey:(NSString *)key;
 
 - (id)valueForKey:(NSString *)key assertingClass:(Class)class;
-- (id)valueForKey:(NSString *)key assertingRespondsToSelector:(SEL)theSelector;
-- (BOOL)contentsOfCollection:(id <NSFastEnumeration>)theCollection areKindOfClass:(Class)theClass;
+- (id)valueForKey:(NSString *)key assertingRespondsToSelector:(SEL)selector;
+- (BOOL)contentsOfCollection:(id <NSFastEnumeration>)theCollection areKindOfClass:(Class)class;
 
 @end

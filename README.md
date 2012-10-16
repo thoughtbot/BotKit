@@ -26,16 +26,6 @@ The fastest way to get started with BotKit in your project is by adding it as a 
 * Expand the 'Link Binary with Libraries' section and click the '+' button.
 * Select 'libBotKit.a' and click 'Add'.  
 	
-### Configure your app's build settings to properly link to Objective-C files.
-
-* Select the 'Build Settings' tab in your project's target settings.
-* Find the 'Other Linker Flags' setting and add `-ObjC` and `-all_load`.  
-	
-### Configure the app target to use the BotKit headers when building.
-
-* Ensure that the 'Build Settings' tab is still selected.
-* Find the 'Header Search Paths' setting and add `"$(TARGET_BUILD_DIR)/usr/local/lib/include"` and `"$(OBJROOT)/UninstalledProducts/include"`. Note the quotation marks, they are necessary. 
-	
 ### Import BotKit wherever it is needed.  
 
 * `#import <BotKit/BotKit.h>`
@@ -45,6 +35,15 @@ The fastest way to get started with BotKit in your project is by adding it as a 
 	$ git submodule init
 	$ git submodule update
 	
-## License
----
-BotKit is Copyright &copy; 2012 Mark Adams and thoughtbot, inc.
+
+## Credits
+-------
+
+
+![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
+
+BotKit is maintained by [thoughtbot, inc](http://thoughtbot.com/community)
+The names and logos for thoughtbot are trademarks of thoughtbot, inc.
+
+BotKit is © 2012 thoughtbot, inc. It is distributed under the [Creative Commons
+Attribution License](http://creativecommons.org/licenses/by/3.0/).

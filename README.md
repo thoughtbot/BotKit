@@ -1,9 +1,8 @@
 # BotKit
----
 BotKit is a Cocoa Touch static library for use in iOS projects. It includes a number of helpful classes and categories that are useful during the development of an iOS application.
 
 ## Installation
----
+
 The fastest way to get started with BotKit in your project is by adding it as a git submodule. 
 
 ### Clone the library into your app's directory tree.
@@ -35,10 +34,12 @@ The fastest way to get started with BotKit in your project is by adding it as a 
 	$ git submodule init
 	$ git submodule update
 	
+## Updating
+To update the BotKit submodule when there are upstream changes, perform this command from within your project's directory.
 
-## Credits
--------
+	$ git submodule foreach git pull --rebase
 
+## Credits  
 
 ![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
 

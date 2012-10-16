@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4DD67725162CBB8F005799BD /* BKCoreDataManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFEB125161654D600685D38 /* BKCoreDataManager.h */; };
-		4DD67726162CBB8F005799BD /* BKManagedViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFEB127161654D600685D38 /* BKManagedViewController.h */; };
-		4DD67727162CBB8F005799BD /* BKManagedTableViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFEB129161654D600685D38 /* BKManagedTableViewController.h */; };
-		4DD67728162CBB8F005799BD /* UIColor+AdjustColor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DF2E718162C8EC90041F4D2 /* UIColor+AdjustColor.h */; };
-		4DD67729162CBB8F005799BD /* UIColor+Serialization.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DF2E715162C8EB90041F4D2 /* UIColor+Serialization.h */; };
-		4DD6772A162CBB8F005799BD /* NSObject+Coding.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFEB135161655F300685D38 /* NSObject+Coding.h */; };
-		4DD6772B162CBB8F005799BD /* NSArray+ObjectAccess.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFEB12B161654D600685D38 /* NSArray+ObjectAccess.h */; };
-		4DD6772C162CBB8F005799BD /* NSDate+RelativeDates.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DFEB12D161654D600685D38 /* NSDate+RelativeDates.h */; };
-		4DD6772D162CBB8F005799BD /* NSArray+Filtering.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4DF2E71B162C940B0041F4D2 /* NSArray+Filtering.h */; };
+		4D562019162DB3AF00D633B7 /* BotKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFEB0F116164E1900685D38 /* BotKit.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4D56201A162DB3AF00D633B7 /* BKCoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFEB125161654D600685D38 /* BKCoreDataManager.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4D56201B162DB3AF00D633B7 /* BKManagedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFEB127161654D600685D38 /* BKManagedViewController.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4D56201C162DB3AF00D633B7 /* BKManagedTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFEB129161654D600685D38 /* BKManagedTableViewController.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4D56201D162DB3AF00D633B7 /* UIColor+AdjustColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DF2E718162C8EC90041F4D2 /* UIColor+AdjustColor.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4D56201E162DB3AF00D633B7 /* UIColor+Serialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DF2E715162C8EB90041F4D2 /* UIColor+Serialization.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4D56201F162DB3AF00D633B7 /* NSObject+Coding.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFEB135161655F300685D38 /* NSObject+Coding.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4D562020162DB3AF00D633B7 /* NSArray+ObjectAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFEB12B161654D600685D38 /* NSArray+ObjectAccess.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4D562021162DB3AF00D633B7 /* NSDate+RelativeDates.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFEB12D161654D600685D38 /* NSDate+RelativeDates.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4D562022162DB3AF00D633B7 /* NSArray+Filtering.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DF2E71B162C940B0041F4D2 /* NSArray+Filtering.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		4DF2E717162C8EB90041F4D2 /* UIColor+Serialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2E716162C8EB90041F4D2 /* UIColor+Serialization.m */; };
 		4DF2E71A162C8EC90041F4D2 /* UIColor+AdjustColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2E719162C8EC90041F4D2 /* UIColor+AdjustColor.m */; };
 		4DF2E71D162C940B0041F4D2 /* NSArray+Filtering.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF2E71C162C940B0041F4D2 /* NSArray+Filtering.m */; };
@@ -38,15 +39,6 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				4DD67725162CBB8F005799BD /* BKCoreDataManager.h in CopyFiles */,
-				4DD67726162CBB8F005799BD /* BKManagedViewController.h in CopyFiles */,
-				4DD67727162CBB8F005799BD /* BKManagedTableViewController.h in CopyFiles */,
-				4DD67728162CBB8F005799BD /* UIColor+AdjustColor.h in CopyFiles */,
-				4DD67729162CBB8F005799BD /* UIColor+Serialization.h in CopyFiles */,
-				4DD6772A162CBB8F005799BD /* NSObject+Coding.h in CopyFiles */,
-				4DD6772B162CBB8F005799BD /* NSArray+ObjectAccess.h in CopyFiles */,
-				4DD6772C162CBB8F005799BD /* NSDate+RelativeDates.h in CopyFiles */,
-				4DD6772D162CBB8F005799BD /* NSArray+Filtering.h in CopyFiles */,
 				4DFEB0F216164E1900685D38 /* BotKit.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +158,26 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		4D562018162DB38F00D633B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D562019162DB3AF00D633B7 /* BotKit.h in Headers */,
+				4D56201A162DB3AF00D633B7 /* BKCoreDataManager.h in Headers */,
+				4D56201B162DB3AF00D633B7 /* BKManagedViewController.h in Headers */,
+				4D56201C162DB3AF00D633B7 /* BKManagedTableViewController.h in Headers */,
+				4D56201D162DB3AF00D633B7 /* UIColor+AdjustColor.h in Headers */,
+				4D56201E162DB3AF00D633B7 /* UIColor+Serialization.h in Headers */,
+				4D56201F162DB3AF00D633B7 /* NSObject+Coding.h in Headers */,
+				4D562020162DB3AF00D633B7 /* NSArray+ObjectAccess.h in Headers */,
+				4D562021162DB3AF00D633B7 /* NSDate+RelativeDates.h in Headers */,
+				4D562022162DB3AF00D633B7 /* NSArray+Filtering.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		4DFEB0E816164E1900685D38 /* BotKit */ = {
 			isa = PBXNativeTarget;
@@ -174,6 +186,7 @@
 				4DFEB0E516164E1900685D38 /* Sources */,
 				4DFEB0E616164E1900685D38 /* Frameworks */,
 				4DFEB0E716164E1900685D38 /* CopyFiles */,
+				4D562018162DB38F00D633B7 /* Headers */,
 			);
 			buildRules = (
 			);

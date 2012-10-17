@@ -9,7 +9,7 @@
 #import "BKCoreDataManager.h"
 #import "BKManagedViewController.h"
 #import "BKManagedTableViewController.h"
-#import "NSObject+Coding.h"
+#import "NSObject+BKCoding.h"
 #import "NSArray+ObjectAccess.h"
 #import "NSDate+RelativeDates.h"
 #import "UIColor+AdjustColor.h"

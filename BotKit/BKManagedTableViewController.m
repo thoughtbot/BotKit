@@ -8,7 +8,7 @@
 
 #import "BKManagedTableViewController.h"
 
-@interface BKManagedTableViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface BKManagedTableViewController ()
 
 @end
 

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BKManagedViewController.h"
 
-@interface BKManagedTableViewController : BKManagedViewController
+@interface BKManagedTableViewController : BKManagedViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) UITableView *tableView;
 @property (assign, nonatomic) BOOL clearsSelectionOnViewWillAppear;

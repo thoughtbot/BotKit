@@ -20,4 +20,6 @@
 // If store name is missing a path extension, .sqlite will be appended automagically!
 - (id)initWithSQLiteStoreName:(NSString *)storeName;
 
+- (BOOL)saveContext;
+
 @end

@@ -20,6 +20,8 @@
 
 @implementation BKCoreDataManager
 
+#pragma mark - NSObject;
+
 - (id)init
 {
     self = [self initWithSQLiteStoreName:nil];
@@ -29,6 +31,8 @@
     
     return self;
 }
+
+#pragma mark - Initialization
 
 - (id)initWithSQLiteStoreName:(NSString *)storeName
 {
@@ -45,6 +49,7 @@
 }
 
 #pragma mark - Lazy Property Instantiation
+
 - (NSManagedObjectContext *)managedObjectContext
 {
     if (!_managedObjectContext)
@@ -90,13 +95,28 @@
     return _managedObjectModel;
 }
 
+#pragma mark - Saving NSManagedObjectContext
+
+- (BOOL)saveContext
+{
+    NSError *error = nil;
+    BOOL saved = [self.managedObjectContext save:&error];
+
+    if (!saved)
+        NSLog(@"Error saving context: %@, %@", error, error.userInfo);
+
+    return saved;
+}
+
 #pragma mark - App Documents Directory Helper
+
 - (NSURL *)applicationDocumentsDirectory
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
 #pragma mark - Store Path Name Helper
+
 - (NSString *)normalizedStoreNameWithStoreName:(NSString *)storeName
 {
     NSAssert(storeName, @"Method was expecting a store name but store name was nil.");

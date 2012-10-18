@@ -24,6 +24,12 @@ The fastest way to get started with BotKit in your project is by adding it as a 
 * Ensure that the 'Build Phases' tab is still selected.
 * Expand the 'Link Binary with Libraries' section and click the '+' button.
 * Select 'libBotKit.a' and click 'Add'.  
+
+### Configure your app's build settings to link to BotKit.
+
+* Select the 'Build Settings' tab.
+* Search the build settings for 'Other linker flags'
+* Add `-ObjC` and `-all_load` to 'Other linker flags'
 	
 ### Import BotKit wherever it is needed.  
 

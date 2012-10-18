@@ -14,7 +14,6 @@
 #import "NSDate+RelativeDates.h"
 #import "UIColor+AdjustColor.h"
 #import "UIColor+Serialization.h"
-#import "NSArray+Filtering.h"
 
 /* 
 
@@ -26,10 +25,6 @@ BKImageLoader
 
 UIImage:
  +imageWithContentsOfURLPath:
- 
-NSArray:
- -filteredArrayWhereKeys:matchValue:withMethod:
- -filteredArrayWhereKeys:containValue:caseInsensitive:diacritical:
  
 NSURLRequest:
  +requestWithString:

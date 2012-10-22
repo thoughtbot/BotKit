@@ -14,6 +14,7 @@
 #import "NSDate+RelativeDates.h"
 #import "UIColor+AdjustColor.h"
 #import "UIColor+Serialization.h"
+#import "NSData+Base64Encoding.h"
 
 /* 
 

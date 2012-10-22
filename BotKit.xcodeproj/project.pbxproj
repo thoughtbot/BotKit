@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D495EF01636047D00BD0B62 /* NSData+Base64Encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D495EEE1636047D00BD0B62 /* NSData+Base64Encoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D495EF11636047D00BD0B62 /* NSData+Base64Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D495EEF1636047D00BD0B62 /* NSData+Base64Encoding.m */; };
 		4D562019162DB3AF00D633B7 /* BotKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFEB0F116164E1900685D38 /* BotKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D56201A162DB3AF00D633B7 /* BKCoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFEB125161654D600685D38 /* BKCoreDataManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D56201B162DB3AF00D633B7 /* BKManagedViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFEB127161654D600685D38 /* BKManagedViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,6 +44,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D495EEE1636047D00BD0B62 /* NSData+Base64Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64Encoding.h"; sourceTree = "<group>"; };
+		4D495EEF1636047D00BD0B62 /* NSData+Base64Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64Encoding.m"; sourceTree = "<group>"; };
 		4DF2E715162C8EB90041F4D2 /* UIColor+Serialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Serialization.h"; sourceTree = "<group>"; };
 		4DF2E716162C8EB90041F4D2 /* UIColor+Serialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Serialization.m"; sourceTree = "<group>"; };
 		4DF2E718162C8EC90041F4D2 /* UIColor+AdjustColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AdjustColor.h"; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 		4DFEB1381616566800685D38 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				4D495EEE1636047D00BD0B62 /* NSData+Base64Encoding.h */,
+				4D495EEF1636047D00BD0B62 /* NSData+Base64Encoding.m */,
 				4DF2E718162C8EC90041F4D2 /* UIColor+AdjustColor.h */,
 				4DF2E719162C8EC90041F4D2 /* UIColor+AdjustColor.m */,
 				4DF2E715162C8EB90041F4D2 /* UIColor+Serialization.h */,
@@ -164,6 +170,7 @@
 				4D56201F162DB3AF00D633B7 /* NSObject+BKCoding.h in Headers */,
 				4D562020162DB3AF00D633B7 /* NSArray+ObjectAccess.h in Headers */,
 				4D562021162DB3AF00D633B7 /* NSDate+RelativeDates.h in Headers */,
+				4D495EF01636047D00BD0B62 /* NSData+Base64Encoding.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +234,7 @@
 				4DFEB137161655F300685D38 /* NSObject+BKCoding.m in Sources */,
 				4DF2E717162C8EB90041F4D2 /* UIColor+Serialization.m in Sources */,
 				4DF2E71A162C8EC90041F4D2 /* UIColor+AdjustColor.m in Sources */,
+				4D495EF11636047D00BD0B62 /* NSData+Base64Encoding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

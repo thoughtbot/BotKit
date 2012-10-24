@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D23E96E16385180001151FA /* UIViewController+SegueIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D23E96C16385180001151FA /* UIViewController+SegueIdentifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D23E96F16385180001151FA /* UIViewController+SegueIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D23E96D16385180001151FA /* UIViewController+SegueIdentifier.m */; };
 		4D495EF01636047D00BD0B62 /* NSData+Base64Encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D495EEE1636047D00BD0B62 /* NSData+Base64Encoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D495EF11636047D00BD0B62 /* NSData+Base64Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D495EEF1636047D00BD0B62 /* NSData+Base64Encoding.m */; };
 		4D562019162DB3AF00D633B7 /* BotKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DFEB0F116164E1900685D38 /* BotKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -44,6 +46,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D23E96C16385180001151FA /* UIViewController+SegueIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SegueIdentifier.h"; sourceTree = "<group>"; };
+		4D23E96D16385180001151FA /* UIViewController+SegueIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SegueIdentifier.m"; sourceTree = "<group>"; };
 		4D495EEE1636047D00BD0B62 /* NSData+Base64Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64Encoding.h"; sourceTree = "<group>"; };
 		4D495EEF1636047D00BD0B62 /* NSData+Base64Encoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64Encoding.m"; sourceTree = "<group>"; };
 		4DF2E715162C8EB90041F4D2 /* UIColor+Serialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Serialization.h"; sourceTree = "<group>"; };
@@ -150,6 +154,8 @@
 				4DFEB12C161654D600685D38 /* NSArray+ObjectAccess.m */,
 				4DFEB12D161654D600685D38 /* NSDate+RelativeDates.h */,
 				4DFEB12E161654D600685D38 /* NSDate+RelativeDates.m */,
+				4D23E96C16385180001151FA /* UIViewController+SegueIdentifier.h */,
+				4D23E96D16385180001151FA /* UIViewController+SegueIdentifier.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -170,6 +176,7 @@
 				4D56201F162DB3AF00D633B7 /* NSObject+BKCoding.h in Headers */,
 				4D562020162DB3AF00D633B7 /* NSArray+ObjectAccess.h in Headers */,
 				4D562021162DB3AF00D633B7 /* NSDate+RelativeDates.h in Headers */,
+				4D23E96E16385180001151FA /* UIViewController+SegueIdentifier.h in Headers */,
 				4D495EF01636047D00BD0B62 /* NSData+Base64Encoding.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +242,7 @@
 				4DF2E717162C8EB90041F4D2 /* UIColor+Serialization.m in Sources */,
 				4DF2E71A162C8EC90041F4D2 /* UIColor+AdjustColor.m in Sources */,
 				4D495EF11636047D00BD0B62 /* NSData+Base64Encoding.m in Sources */,
+				4D23E96F16385180001151FA /* UIViewController+SegueIdentifier.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

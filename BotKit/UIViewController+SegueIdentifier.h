@@ -11,5 +11,6 @@
 @interface UIViewController (SegueIdentifier)
 
 + (NSString *)segueIdentifier;
++ (NSString *)storyboardIdentifier;
 
 @end

@@ -15,4 +15,9 @@
     return nil;
 }
 
++ (NSString *)storyboardIdentifier
+{
+    return nil;
+}
+
 @end

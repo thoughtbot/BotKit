@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0905FFE6165AA6F600BDA52F /* NSString+ContainsString.h in Headers */ = {isa = PBXBuildFile; fileRef = 0905FFE4165AA6F600BDA52F /* NSString+ContainsString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0905FFE7165AA6F600BDA52F /* NSString+ContainsString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0905FFE5165AA6F600BDA52F /* NSString+ContainsString.m */; };
 		4D23E96E16385180001151FA /* UIViewController+SegueIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D23E96C16385180001151FA /* UIViewController+SegueIdentifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D23E96F16385180001151FA /* UIViewController+SegueIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D23E96D16385180001151FA /* UIViewController+SegueIdentifier.m */; };
 		4D495EF01636047D00BD0B62 /* NSData+Base64Encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D495EEE1636047D00BD0B62 /* NSData+Base64Encoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,6 +48,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0905FFE4165AA6F600BDA52F /* NSString+ContainsString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ContainsString.h"; sourceTree = "<group>"; };
+		0905FFE5165AA6F600BDA52F /* NSString+ContainsString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ContainsString.m"; sourceTree = "<group>"; };
 		4D23E96C16385180001151FA /* UIViewController+SegueIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SegueIdentifier.h"; sourceTree = "<group>"; };
 		4D23E96D16385180001151FA /* UIViewController+SegueIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SegueIdentifier.m"; sourceTree = "<group>"; };
 		4D495EEE1636047D00BD0B62 /* NSData+Base64Encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64Encoding.h"; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 				4DFEB12E161654D600685D38 /* NSDate+RelativeDates.m */,
 				4D23E96C16385180001151FA /* UIViewController+SegueIdentifier.h */,
 				4D23E96D16385180001151FA /* UIViewController+SegueIdentifier.m */,
+				0905FFE4165AA6F600BDA52F /* NSString+ContainsString.h */,
+				0905FFE5165AA6F600BDA52F /* NSString+ContainsString.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -178,6 +184,7 @@
 				4D562021162DB3AF00D633B7 /* NSDate+RelativeDates.h in Headers */,
 				4D23E96E16385180001151FA /* UIViewController+SegueIdentifier.h in Headers */,
 				4D495EF01636047D00BD0B62 /* NSData+Base64Encoding.h in Headers */,
+				0905FFE6165AA6F600BDA52F /* NSString+ContainsString.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +250,7 @@
 				4DF2E71A162C8EC90041F4D2 /* UIColor+AdjustColor.m in Sources */,
 				4D495EF11636047D00BD0B62 /* NSData+Base64Encoding.m in Sources */,
 				4D23E96F16385180001151FA /* UIViewController+SegueIdentifier.m in Sources */,
+				0905FFE7165AA6F600BDA52F /* NSString+ContainsString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

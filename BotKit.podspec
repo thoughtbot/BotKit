@@ -4,8 +4,8 @@ Pod::Spec.new do |s|
   s.summary      = "BotKit is a Cocoa Touch static library for use in iOS projects."
   s.homepage     = "https://github.com/thoughtbot/botkit"
 
-  s.license      = { :type => 'MIT' }
-  s.authors       = { "Mark Adams" => "mark@thoughtbot.com", "Gordon Fontenot" => "gordon@thoughtbot.com", "Diana Zmuda" => "diana@apprentice.io" }
+  s.license      = 'MIT'
+  s.authors      = { "Mark Adams" => "mark@thoughtbot.com", "Gordon Fontenot" => "gordon@thoughtbot.com", "Diana Zmuda" => "diana@apprentice.io" }
   s.source       = { 
     :git => "https://github.com/thoughtbot/botkit.git",
     :tag => "0.0.1"

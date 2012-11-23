@@ -3,54 +3,32 @@ BotKit is a Cocoa Touch static library for use in iOS projects. It includes a nu
 
 ## Installation
 
-The fastest way to get started with BotKit in your project is by adding it as a git submodule. 
+The fastest way to get started with BotKit in your project is by using [Cocoapods](https://cocoapods.org). 
 
-### Clone the library into your app's directory tree.
+### Add BotKit to your Podfile
 
-	$ cd YourProject
-	$ git submodule add git@github.com:thoughtbot/botkit.git
-
-### Add `BotKit.xcodeproj` to your project.
-
-### Configure your app's target to build BotKit.
-
-* Open your project's target settings.
-* Select the 'Build Phases' tab.
-* Expand the 'Target Dependencies' section and click the '+' button.
-* Select 'BotKit' and click 'Add'.
-
-### Configure your app's target to link to BotKit.
-
-* Ensure that the 'Build Phases' tab is still selected.
-* Expand the 'Link Binary with Libraries' section and click the '+' button.
-* Select 'libBotKit.a' and click 'Add'.  
-
-### Configure your app's build settings to link to BotKit.
-
-* Select the 'Build Settings' tab.
-* Search the build settings for 'Other linker flags'
-* Add `-ObjC` and `-all_load` to 'Other linker flags'
+	pod 'BotKit', '~> 0.1'
 	
-### Import BotKit wherever it is needed.  
+### Install the dependencies
 
-* `#import <BotKit/BotKit.h>`
+	$ pod install
 	
-**Note**: When cloning a project that includes BotKit as a git submodule, you must initialize and update the submodule before it can be built properly.
+### Import BotKit wherever it is needed
 
-	$ git submodule init
-	$ git submodule update
+If this is your first Cocoapod, be sure to open the Xcode workspace instead of the project file when building your project.
+
+	$ open App.xcworkspace
 	
-## Updating
-To update the BotKit submodule when there are upstream changes, perform this command from within your project's directory.
+Import `BotKit.h` to get started.
 
-	$ git submodule foreach git pull --rebase
+	#import <BotKit/BotKit.h>
 
 ## Credits  
 
-![thoughtbot](http://thoughtbot.com/images/tm/logo.png)
+BotKit is maintained by Mark Adams. It was written by [thoughtbot, inc](http://thoughtbot.com/community).
 
-BotKit is maintained by [thoughtbot, inc](http://thoughtbot.com/community)
+![thoughtbot](https://a248.e.akamai.net/camo.github.com/23e90466577ec68e58aa328113e15b756cd0c946/687474703a2f2f74686f75676874626f742e636f6d2f696d616765732f746d2f6c6f676f2e706e67)
+
 The names and logos for thoughtbot are trademarks of thoughtbot, inc.
 
-BotKit is © 2012 thoughtbot, inc. It is distributed under the [Creative Commons
-Attribution License](http://creativecommons.org/licenses/by/3.0/).
+BotKit is Copyright © 2012 thoughtbot, inc. It is free software and may be re-distributed under the terms specified in the LICENSE file.

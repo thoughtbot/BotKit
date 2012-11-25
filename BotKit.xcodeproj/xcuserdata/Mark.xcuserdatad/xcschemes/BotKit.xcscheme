@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4DFEB0E816164E1900685D38"
-               BuildableName = "libBotKit.a"
+               BlueprintIdentifier = "4DDE4A0316620785001707F4"
+               BuildableName = "BotKit.app"
                BlueprintName = "BotKit"
                ReferencedContainer = "container:BotKit.xcodeproj">
             </BuildableReference>
@@ -28,7 +28,26 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4DDE4A2916620785001707F4"
+               BuildableName = "BotKitTests.octest"
+               BlueprintName = "BotKitTests"
+               ReferencedContainer = "container:BotKit.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4DDE4A0316620785001707F4"
+            BuildableName = "BotKit.app"
+            BlueprintName = "BotKit"
+            ReferencedContainer = "container:BotKit.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -39,6 +58,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4DDE4A0316620785001707F4"
+            BuildableName = "BotKit.app"
+            BlueprintName = "BotKit"
+            ReferencedContainer = "container:BotKit.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -48,6 +76,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "4DDE4A0316620785001707F4"
+            BuildableName = "BotKit.app"
+            BlueprintName = "BotKit"
+            ReferencedContainer = "container:BotKit.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

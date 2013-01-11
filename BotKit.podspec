@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   s.source_files = 'BotKit/Classes'
   s.requires_arc = true
   s.framework    = 'CoreData'
-  
+
   s.prefix_header_contents = <<-EOS
-#import <Availability.h>
+  #import <Availability.h>
   #import <CoreData/CoreData.h>
 EOS
 

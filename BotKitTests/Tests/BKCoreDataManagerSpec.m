@@ -6,7 +6,6 @@
 //  Copyright (c) 2012 thoughtbot. All rights reserved.
 //
 
-#import "Kiwi.h"
 #import "BKCoreDataManager.h"
 
 SPEC_BEGIN(BKCoreDataManagerSpec)

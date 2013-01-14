@@ -10,7 +10,11 @@
 
 @interface UIColor (AdjustColor)
 
-- (UIColor *)lighterColorByAmount:(CGFloat)amount;
-- (UIColor *)darkerColorByAmount:(CGFloat)amount;
+/**
+ Adjust brightness and saturation by given amount.
+ @param amount: A negative amount will darken the color, a positive amount will lighten.
+ @return returns the adjusted color.
+*/
+- (UIColor *)adjustColorByAmount:(CGFloat)amount;
 
 @end

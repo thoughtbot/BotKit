@@ -25,7 +25,7 @@ static NSInteger const multiplier = 100000;
 
 - (id)randomObject
 {
-    return [self objectAtIndex:arc4random()%[self count]];
+    return [self objectAtIndex:arc4random() % [self count]];
 }
 
 - (id)randomObjectUsingWeights:(NSArray *)weights
@@ -33,18 +33,18 @@ static NSInteger const multiplier = 100000;
     NSAssert([weights count] == [self count], @"Weight array needs to be the same length as this array.");
     
     /* Set each element in weights to a percentage */
-    int len = [self count];
+    NSInteger len = [self count];
     float *w = (float *)calloc(len, sizeof(float));
     
-    for (int i=0; i<len; ++i)
+    for (int i = 0; i < len; ++i)
         w[i] = [weights[i] floatValue];
     
-    return [self randomObjectUsingWeights_quick:w];
+    return [self randomObjectUsingFastWeights:w];
 }
 
-- (id)randomObjectUsingWeights_quick:(float *)weights
+- (id)randomObjectUsingFastWeights:(float *)weights
 {
-    int len = [self count];
+    NSInteger len = [self count];
     
     /* Set each element in weights to a percentage */
     float sum = 0.0;
@@ -56,18 +56,20 @@ static NSInteger const multiplier = 100000;
     /* Scale the numbers by the product of "multiple and weight[index]" */
     float *scaledFitness = (float *)calloc(len, sizeof(float));
     scaledFitness[0] = multiplier * scaled[0];
-    for (int i=1; i<len; ++i) {
+    
+    for (int i = 1; i < len; ++i)
         scaledFitness[i] = scaledFitness[i-1] + multiplier * scaled[i];
-    }
     
     /* Do the picking */
     NSInteger randomSeed = arc4random() % (int)scaledFitness[len-1];
     
     NSInteger index = 0;
     NSInteger minDifference = NSIntegerMax;
-    for (int i=0; i<len; ++i) {
+    for (int i = 0; i < len; ++i) {
         NSInteger difference = (scaledFitness[i] - randomSeed);
-        if (difference < minDifference && difference >= 0) {
+        
+        if (difference < minDifference && difference >= 0)
+        {
             minDifference = difference;
             index = i;
         }

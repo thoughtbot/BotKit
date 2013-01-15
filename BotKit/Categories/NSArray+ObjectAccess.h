@@ -26,6 +26,6 @@
  @param weights: C array (should be memory aligned) and have the same length as this array.
  @return an object from this array.
  */
-- (id)randomObjectUsingWeights_quick:(float *)weights;
+- (id)randomObjectUsingFastWeights:(float *)weights;
 
 @end

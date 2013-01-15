@@ -10,43 +10,23 @@
 
 @implementation UIColor (AdjustColor)
 
-- (UIColor *)lighterColorByAmount:(CGFloat)amount
+- (UIColor *)adjustColorByAmount:(CGFloat)amount
 {
     CGFloat hue, saturation, brightness, alpha;
-
+    
     BOOL converted = [self getHue:&hue saturation:&saturation brightness:&brightness alpha:&alpha];
-
+    
     if (!converted)
         return nil;
-
-    CGFloat adjustmentAmount = amount;
-
+    
+    CGFloat adjustmentAmount = fabsf(amount);
+    
     if (adjustmentAmount < 0.0f) adjustmentAmount = 0.0f;
     if (adjustmentAmount > 1.0f) adjustmentAmount = 1.0f;
-
-    saturation -= adjustmentAmount;
-    brightness += adjustmentAmount;
-
-    return [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:alpha];
-}
-
-- (UIColor *)darkerColorByAmount:(CGFloat)amount
-{
-    CGFloat hue, saturation, brightness, alpha;
-
-    BOOL converted = [self getHue:&hue saturation:&saturation brightness:&brightness alpha:&alpha];
-
-    if (!converted)
-        return nil;
-
-    CGFloat adjustmentAmount = amount;
-
-    if (adjustmentAmount < 0.0f) adjustmentAmount = 0.0f;
-    if (adjustmentAmount > 1.0f) adjustmentAmount = 1.0f;
-
-    saturation += adjustmentAmount;
-    brightness -= adjustmentAmount;
-
+    
+    saturation += adjustmentAmount * ((amount < 0) - (amount > 0));
+    brightness += adjustmentAmount * ((amount > 0) - (amount < 0));
+    
     return [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:alpha];
 }
 

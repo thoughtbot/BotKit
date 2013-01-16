@@ -24,8 +24,8 @@
     if (adjustmentAmount < 0.0f) adjustmentAmount = 0.0f;
     if (adjustmentAmount > 1.0f) adjustmentAmount = 1.0f;
     
-    saturation += adjustmentAmount * ((amount<0) - (amount>0));
-    brightness += adjustmentAmount * ((amount>0) - (amount<0));
+    saturation += adjustmentAmount * ((amount < 0) - (amount > 0));
+    brightness += adjustmentAmount * ((amount > 0) - (amount < 0));
     
     return [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:alpha];
 }

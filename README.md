@@ -25,7 +25,7 @@ Import `BotKit.h` to get started.
 
 ## Credits  
 
-BotKit is maintained by Mark Adams. It was written by [thoughtbot, inc](http://thoughtbot.com/community).
+BotKit is maintained by Mark Adams, Gordon Fontenot, Diana Zmuda and Theo Calmes. It was written by [thoughtbot, inc](http://thoughtbot.com/community).
 
 ![thoughtbot](https://a248.e.akamai.net/camo.github.com/23e90466577ec68e58aa328113e15b756cd0c946/687474703a2f2f74686f75676874626f742e636f6d2f696d616765732f746d2f6c6f676f2e706e67)
 

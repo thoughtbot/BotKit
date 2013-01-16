@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/thoughtbot/BotKit"
 
   s.license      = 'MIT'
-  s.authors      = { "Mark Adams" => "mark@thoughtbot.com", "Gordon Fontenot" => "gordon@thoughtbot.com", "Diana Zmuda" => "diana@apprentice.io" }
+  s.authors      = { "Mark Adams" => "mark@thoughtbot.com", "Gordon Fontenot" => "gordon@thoughtbot.com", "Diana Zmuda" => "diana@apprentice.io", "Theodore Calmes" => "theo@thoughtbot.com" }
   s.source       = { 
     :git => "https://github.com/thoughtbot/BotKit.git",
     :tag => "0.1.4"

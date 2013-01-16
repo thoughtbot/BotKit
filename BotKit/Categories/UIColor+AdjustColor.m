@@ -19,7 +19,7 @@
     if (!converted)
         return nil;
     
-    CGFloat adjustmentAmount = fabsf((amount));
+    CGFloat adjustmentAmount = fabsf(amount);
     
     if (adjustmentAmount < 0.0f) adjustmentAmount = 0.0f;
     if (adjustmentAmount > 1.0f) adjustmentAmount = 1.0f;

@@ -17,6 +17,7 @@
 #import "NSData+Base64Encoding.h"
 #import "UIViewController+SegueIdentifier.h"
 #import "NSString+ContainsString.h"
+#import "BKMacros.h"
 
 /* 
 

@@ -18,7 +18,12 @@
 		4DDE4A2E16620785001707F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDE4A0A16620785001707F4 /* Foundation.framework */; };
 		4DDE4A2F16620785001707F4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDE4A0E16620785001707F4 /* CoreData.framework */; };
 		A4E91E4083C74402BCEE376D /* libPods-BotKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 885652A913F44864AF910A33 /* libPods-BotKitTests.a */; };
+		E423D68A16A9BF7900812A7B /* BKMatrixClassesSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E423D68916A9BF7900812A7B /* BKMatrixClassesSpec.m */; };
+		E423D68F16A9C38C00812A7B /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DC703D16A86F4A00A22D3C /* Accelerate.framework */; };
 		E4DC703E16A86F4A00A22D3C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DC703D16A86F4A00A22D3C /* Accelerate.framework */; };
+		E4DC705116A9B5BC00A22D3C /* BKFloatMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DC705016A9B5BC00A22D3C /* BKFloatMatrix.m */; };
+		E4DC705816A9B77B00A22D3C /* BKObjectMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DC705716A9B77B00A22D3C /* BKObjectMatrix.m */; };
+		E4DC706116A9BA4200A22D3C /* BKObjectTensor.m in Sources */ = {isa = PBXBuildFile; fileRef = E4DC706016A9BA4100A22D3C /* BKObjectTensor.m */; };
 		F81FAE1116A0F8B4005CDF42 /* BKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A201C116A09FCD007C661D /* BKAppDelegate.m */; };
 		F8A201A916A09E7B007C661D /* NSArray+ObjectAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A2019216A09E7B007C661D /* NSArray+ObjectAccess.m */; };
 		F8A201AA16A09E7B007C661D /* NSArray+ObjectAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A2019216A09E7B007C661D /* NSArray+ObjectAccess.m */; };
@@ -76,7 +81,16 @@
 		4DDE4A2B16620785001707F4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		7A40087F2E79497CAB312DC7 /* Pods-BotKitTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BotKitTests.xcconfig"; path = "Pods/Pods-BotKitTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		885652A913F44864AF910A33 /* libPods-BotKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BotKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E423D68916A9BF7900812A7B /* BKMatrixClassesSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKMatrixClassesSpec.m; sourceTree = "<group>"; };
+		E423D69916A9DA8000812A7B /* BKMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMacros.h; sourceTree = "<group>"; };
 		E4DC703D16A86F4A00A22D3C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		E4DC704F16A9B5BC00A22D3C /* BKFloatMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKFloatMatrix.h; sourceTree = "<group>"; };
+		E4DC705016A9B5BC00A22D3C /* BKFloatMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKFloatMatrix.m; sourceTree = "<group>"; };
+		E4DC705316A9B6A600A22D3C /* BKMathStructs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMathStructs.h; sourceTree = "<group>"; };
+		E4DC705616A9B77B00A22D3C /* BKObjectMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKObjectMatrix.h; sourceTree = "<group>"; };
+		E4DC705716A9B77B00A22D3C /* BKObjectMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKObjectMatrix.m; sourceTree = "<group>"; };
+		E4DC705F16A9BA4100A22D3C /* BKObjectTensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKObjectTensor.h; sourceTree = "<group>"; };
+		E4DC706016A9BA4100A22D3C /* BKObjectTensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKObjectTensor.m; sourceTree = "<group>"; };
 		F8A2018F16A09E7B007C661D /* BotKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BotKit.h; sourceTree = "<group>"; };
 		F8A2019116A09E7B007C661D /* NSArray+ObjectAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ObjectAccess.h"; sourceTree = "<group>"; };
 		F8A2019216A09E7B007C661D /* NSArray+ObjectAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ObjectAccess.m"; sourceTree = "<group>"; };
@@ -131,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E423D68F16A9C38C00812A7B /* Accelerate.framework in Frameworks */,
 				4D70987D1689921C000DE8F7 /* CoreGraphics.framework in Frameworks */,
 				4D70987C168991E8000DE8F7 /* QuartzCore.framework in Frameworks */,
 				4DDE4A2C16620785001707F4 /* SenTestingKit.framework in Frameworks */,
@@ -148,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				4DDE4A1016620785001707F4 /* BotKit */,
+				E4DC705216A9B67700A22D3C /* Structs */,
 				4DDE4A3216620785001707F4 /* BotKitTests */,
 				4DDE4A0716620785001707F4 /* Frameworks */,
 				4DDE4A0516620785001707F4 /* Products */,
@@ -183,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				F8A2018F16A09E7B007C661D /* BotKit.h */,
+				E423D69916A9DA8000812A7B /* BKMacros.h */,
 				F8A2019016A09E7B007C661D /* Categories */,
 				F8A201A116A09E7B007C661D /* Controllers */,
 				F8A201A616A09E7B007C661D /* Models */,
@@ -198,6 +215,15 @@
 				F8A201CB16A09FCD007C661D /* Tests */,
 			);
 			path = BotKitTests;
+			sourceTree = "<group>";
+		};
+		E4DC705216A9B67700A22D3C /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				E4DC705316A9B6A600A22D3C /* BKMathStructs.h */,
+			);
+			name = Structs;
+			path = BotKit;
 			sourceTree = "<group>";
 		};
 		F8A2019016A09E7B007C661D /* Categories */ = {
@@ -239,6 +265,12 @@
 			children = (
 				F8A201A716A09E7B007C661D /* BKCoreDataManager.h */,
 				F8A201A816A09E7B007C661D /* BKCoreDataManager.m */,
+				E4DC704F16A9B5BC00A22D3C /* BKFloatMatrix.h */,
+				E4DC705016A9B5BC00A22D3C /* BKFloatMatrix.m */,
+				E4DC705616A9B77B00A22D3C /* BKObjectMatrix.h */,
+				E4DC705716A9B77B00A22D3C /* BKObjectMatrix.m */,
+				E4DC705F16A9BA4100A22D3C /* BKObjectTensor.h */,
+				E4DC706016A9BA4100A22D3C /* BKObjectTensor.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -287,6 +319,7 @@
 			children = (
 				F8A201CC16A09FCD007C661D /* BKCoreDataManagerSpec.h */,
 				F8A201CD16A09FCD007C661D /* BKCoreDataManagerSpec.m */,
+				E423D68916A9BF7900812A7B /* BKMatrixClassesSpec.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -430,6 +463,9 @@
 				F8A201BD16A09E7B007C661D /* BKCoreDataManager.m in Sources */,
 				F8A201D816A09FCD007C661D /* main.m in Sources */,
 				F81FAE1116A0F8B4005CDF42 /* BKAppDelegate.m in Sources */,
+				E4DC705116A9B5BC00A22D3C /* BKFloatMatrix.m in Sources */,
+				E4DC705816A9B77B00A22D3C /* BKObjectMatrix.m in Sources */,
+				E4DC706116A9BA4200A22D3C /* BKObjectTensor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +487,7 @@
 				F8A201CF16A09FCD007C661D /* BKAppDelegate.m in Sources */,
 				F8A201D916A09FCD007C661D /* main.m in Sources */,
 				F8A201DB16A09FCD007C661D /* BKCoreDataManagerSpec.m in Sources */,
+				E423D68A16A9BF7900812A7B /* BKMatrixClassesSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

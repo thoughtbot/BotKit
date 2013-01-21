@@ -26,7 +26,7 @@ describe(@"Tests for matrix and tensor classes", ^{
             NSUInteger indexArr[] = {1,2,2,3};
             NSIndexPath *index = [[NSIndexPath alloc] initWithIndexes:indexArr length:4];
             NSString *tensorObj = [tensor objectAtIndex:index];
-            BOOL equal = [tensorObj isEqualToString:@"[1] [2] [3] [3] "];
+            BOOL equal = [tensorObj isEqualToString:@"[1] [2] [2] [3] "];
             [[theValue(equal) should] beTrue];
         });
         

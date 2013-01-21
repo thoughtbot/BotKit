@@ -19,17 +19,13 @@
 @property (nonatomic, readonly) CGFloat *unrolled;
 @property (nonatomic, readonly) NSInteger length;
 
-- (CGFloat)floatAtRow:(NSInteger)row
-             column:(NSInteger)col;
+- (CGFloat)floatAtRow:(NSInteger)row column:(NSInteger)col;
 
 - (CGFloat)floatAtIndex:(NSIndexPath *)index;
 
-- (void)replaceFloatAtIndex:(NSIndexPath *)index
-                  withFloat:(CGFloat)aFloat;
+- (void)replaceFloatAtIndex:(NSIndexPath *)index withFloat:(CGFloat)aFloat;
 
-- (void)replaceFloatAtRow:(NSInteger)row
-                   column:(NSInteger)col
-                withFloat:(CGFloat)aFloat;
+- (void)replaceFloatAtRow:(NSInteger)row column:(NSInteger)col withFloat:(CGFloat)aFloat;
 
 - (BOOL)containsIndex:(NSIndexPath *)index;
 

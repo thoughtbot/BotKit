@@ -19,12 +19,6 @@ NSString *pathDir(NSString *path)
 }
 
 @implementation BKObjectMatrix
-{
-    NSMutableArray *_matrix;
-}
-
-@synthesize rows = _rows;
-@synthesize cols = _cols;
 
 - (id)initWithDimension:(BKMatrixDimension)dimension
 {
@@ -35,8 +29,9 @@ NSString *pathDir(NSString *path)
             andRows:(NSInteger)r
 {
     self = [super init];
+    
     if (self) {
-        _matrix = [[NSMutableArray alloc] initWithArray:array];
+        _unrolled = [[NSMutableArray alloc] initWithArray:array];
         _rows = r;
         _cols = [array count]/r;
     }
@@ -46,11 +41,12 @@ NSString *pathDir(NSString *path)
 - (id)initWithRows:(NSInteger)rows columns:(NSInteger)columns
 {
     self = [super init];
+    
     if (self) {
-        _matrix = [[NSMutableArray alloc] init];
-        for (int i=0; i<_rows*_cols; ++ i) [_matrix addObject:[NSNull null]];
+        _unrolled = [[NSMutableArray alloc] init];
         _rows = rows;
         _cols = columns;
+        for (NSInteger i = 0; i < _rows * _cols; ++ i) [_unrolled addObject:[NSNull null]];
     }
     return self;
 }
@@ -61,24 +57,26 @@ NSString *pathDir(NSString *path)
         parseBlock:(id (^)(NSString *))parser
 {
     self = [super init];
+    
     if (self) {
-        _matrix = [[NSMutableArray alloc] init];
+        _unrolled = [[NSMutableArray alloc] init];
         
         NSError *error = nil;
-        NSString *content = [NSString stringWithContentsOfFile:path
-                                                      encoding:NSUTF8StringEncoding
-                                                         error:&error];
-        if (!content && error) {
+        NSString *content = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:&error];
+        
+        if (!content && error)
+        {
             NSLog(@"Error reading: %@", [error localizedDescription]);
-        } else {
+        }
+        else
+        {
             NSArray *rowsArr = [content componentsSeparatedByString:colDel];
             _rows = [rowsArr count];
             _cols = [[[rowsArr objectAtIndex:0] componentsSeparatedByString:rowDel] count];
             
             for (NSString *row in rowsArr)
-                for (NSString *cell in [row componentsSeparatedByString:rowDel]) {
-                    [_matrix addObject:parser(cell)];
-                }
+                for (NSString *cell in [row componentsSeparatedByString:rowDel])
+                    [_unrolled addObject:parser(cell)];
         }
     }
     return self;
@@ -91,22 +89,24 @@ NSString *pathDir(NSString *path)
 {
     NSMutableString *s = [[NSMutableString alloc] init];
     
-    for (int i=0; i<_rows; i++) {
-        for (int j=0; j<_cols; j++) {
+    for (NSInteger i = 0; i < self.rows; i++) {
+        for (NSInteger j = 0; j < self.cols; j++) {
+            
             id obj = [self objectAtRow:i column:j];
             [s appendString:coder(obj)];
-            if (j != _cols-1) {
+            
+            if (j != self.cols - 1)
                 [s appendString:rowDel];
-            }
         }
-        if (i != _rows-1) {
+        
+        if (i != self.rows-1)
             [s appendString:colDel];
-        }
     }
     
     NSError *error = nil;
     NSString *folder = pathDir(path);
-    if (![[NSFileManager defaultManager] fileExistsAtPath:folder]) {
+    if (![[NSFileManager defaultManager] fileExistsAtPath:folder])
+    {
         BOOL madeDir = [[NSFileManager defaultManager] createDirectoryAtPath:folder
                                                  withIntermediateDirectories:YES
                                                                   attributes:nil
@@ -120,28 +120,30 @@ NSString *pathDir(NSString *path)
                           atomically:YES
                             encoding:NSUTF8StringEncoding
                                error:&error];
+    
     if (!successful)
         NSLog(@"Error saving: %@", [error localizedDescription]);
+    
     return successful;
 }
 
 - (BOOL)containsIndex:(NSIndexPath *)index
 {
-    BOOL rowCheck = (index.row >= 0) && (index.row < _rows);
-    BOOL colCheck = (index.section >= 0) && (index.section < _cols);
+    BOOL rowCheck = (index.row >= 0) && (index.row < self.rows);
+    BOOL colCheck = (index.section >= 0) && (index.section < self.cols);
     
     return rowCheck && colCheck;
 }
 
-- (int)posForIndex:(NSIndexPath *)index
+- (NSInteger)posForIndex:(NSIndexPath *)index
 {
-    return index.row*_cols + index.section;
+    return index.row * self.cols + index.section;
 }
 
-- (NSIndexPath *)indexForPos:(int)pos
+- (NSIndexPath *)indexForPos:(NSInteger)pos
 {
-    int i = (pos - pos%_cols)/_cols;
-    int j = pos%_cols;
+    NSInteger i = (pos - pos % self.cols) / self.cols;
+    NSInteger j = pos % self.cols;
     return [NSIndexPath indexPathForItem:i inSection:j];
 }
 
@@ -149,12 +151,11 @@ NSString *pathDir(NSString *path)
 {
     if (![self containsIndex:index]) return nil;
     
-    int pos = [self posForIndex:index];
-    return [_matrix objectAtIndex:pos];
+    NSInteger pos = [self posForIndex:index];
+    return self.unrolled[pos];
 }
 
-- (id)objectAtRow:(NSInteger)row
-         column:(NSInteger)col
+- (id)objectAtRow:(NSInteger)row column:(NSInteger)col
 {
     NSIndexPath *p = [NSIndexPath indexPathForItem:row inSection:col];
     return [self objectAtIndex:p];
@@ -163,18 +164,18 @@ NSString *pathDir(NSString *path)
 - (void)replaceObjectAtIndex:(NSIndexPath *)index withObject:(id)anObject
 {
     if (![self containsIndex:index]) return;
-    _matrix[[self posForIndex:index]] = anObject;
+    _unrolled[[self posForIndex:index]] = anObject;
 }
 
 - (void)mapIndicesToBlock:(void (^)(NSIndexPath *))block
 {
-    for (int i=0; i<[_matrix count]; ++i)
+    for (NSInteger i = 0; i < self.length; ++i)
         block([self indexForPos:i]);
 }
 
-- (NSMutableArray *)matrix
+- (NSInteger)length
 {
-    return _matrix;
+    return self.rows * self.cols;
 }
 
 @end

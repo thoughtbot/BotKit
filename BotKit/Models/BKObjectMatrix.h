@@ -10,6 +10,11 @@
 
 @interface BKObjectMatrix : NSObject
 
+@property (nonatomic, assign) NSInteger rows;
+@property (nonatomic, assign) NSInteger cols;
+@property (nonatomic, readonly) NSInteger length;
+@property (nonatomic, readonly) NSMutableArray *unrolled;
+
 - (id)initWithDimension:(BKMatrixDimension)dimension;
 - (id)initWithArray:(NSArray *)array andRows:(NSInteger)rows;
 - (id)initWithRows:(NSInteger)rows columns:(NSInteger)columns;
@@ -18,9 +23,6 @@
       rowDelimiter:(NSString *)rowDel
       colDelimiter:(NSString *)colDel
         parseBlock:(id (^)(NSString *cell))parser;
-
-@property (nonatomic) NSInteger rows;
-@property (nonatomic) NSInteger cols;
 
 - (BOOL)saveToFile:(NSString *)path
       rowDelimiter:(NSString *)rowDel
@@ -35,7 +37,5 @@
 - (BOOL)containsIndex:(NSIndexPath *)index;
 
 - (void)mapIndicesToBlock:(void (^)(NSIndexPath *))block;
-
-- (NSMutableArray *)matrix;
 
 @end

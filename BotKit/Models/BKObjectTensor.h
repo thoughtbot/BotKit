@@ -10,10 +10,10 @@ typedef void (^BKObjectTensorMapIndexPathBlock)(NSIndexPath *);
 
 @interface BKObjectTensor : NSObject
 
+@property (nonatomic, readonly) NSIndexPath *dimensions;
+
 - (id)initWithArray:(NSArray *)array dimensions:(NSIndexPath *)dimensions;
 - (id)initWithDimentions:(NSIndexPath *)dimensions;
-
-@property (nonatomic, readonly) NSIndexPath *dimensions;
 
 - (id)objectAtIndex:(NSIndexPath *)index;
 - (void)replaceObjectAtIndex:(NSIndexPath *)index withObject:(id)anObject;

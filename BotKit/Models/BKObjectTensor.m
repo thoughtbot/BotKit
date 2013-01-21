@@ -15,6 +15,7 @@
     NSUInteger *_dimensionArray;
     NSInteger _depth;
 }
+
 @synthesize dimensions = _dimensions;
 
 - (id)initWithDimentions:(NSIndexPath *)dimensions
@@ -24,18 +25,18 @@
         _depth = [dimensions length];
         
         NSUInteger *tempDimentions = (NSUInteger *)calloc(_depth, sizeof(NSUInteger));
-        for (int i=_depth-1, j=0; i>=0; --i, ++j)
+        for (NSInteger i = _depth - 1, j = 0; i >= 0; --i, ++j)
             tempDimentions[i] = [dimensions indexAtPosition:j];
         
         _dimensions = [NSIndexPath indexPathWithIndexes:tempDimentions length:_depth];
         free(tempDimentions);
         
         _array = [[NSMutableArray alloc] init];
-        int size = 1;
-        for (int i=0; i<_depth; ++i)
+        NSInteger size = 1;
+        for (NSInteger i = 0; i < _depth; ++i)
             size *= [_dimensions indexAtPosition:i];
         
-        for (int i=0; i<size; ++i)
+        for (NSInteger i = 0; i < size; ++i)
             [_array addObject:[NSNull null]];
         
         [self initializeFactors];
@@ -66,7 +67,7 @@
     _factors = (NSUInteger *)calloc(_depth, sizeof(NSUInteger));
     _factors[_depth-1] = 1;
     
-    for (int i=_depth-2, j=0; i>=0; --i, ++j)
+    for (NSInteger i = _depth-2, j = 0; i >= 0; --i, ++j)
         _factors[i] = _factors[i+1] * _dimensionArray[j];
 }
 
@@ -76,23 +77,23 @@
     [index getIndexes:indices];
     
     NSInteger pos = 0;
-    for (NSInteger i=0; i<_depth; ++i)
+    for (NSInteger i = 0; i < _depth; ++i)
         pos += _factors[i] * (NSInteger)indices[i];
     
     free(indices);
     return pos;
 }
 
-- (NSIndexPath *)indexPathForPosition:(int)pos
+- (NSIndexPath *)indexPathForPosition:(NSInteger)pos
 {
     NSUInteger *path = (NSUInteger*)calloc(_depth, sizeof(NSUInteger));
     NSInteger *mods = (NSInteger*)calloc(_depth, sizeof(NSInteger));
     
-    mods[0] = pos%_factors[0];
-    path[0] = (pos - mods[0])/(CGFloat)_factors[0];
-    for (NSInteger i=1; i<_depth; ++i) {
-        mods[i] = mods[i-1]%_factors[i];
-        path[i] = (mods[i-1] - mods[i])/(CGFloat)_factors[i];
+    mods[0] = pos % _factors[0];
+    path[0] = (pos - mods[0]) / (CGFloat)_factors[0];
+    for (NSInteger i = 1; i < _depth; ++i) {
+        mods[i] = mods[i-1] % _factors[i];
+        path[i] = (mods[i-1] - mods[i]) / (CGFloat)_factors[i];
     }
     
     NSIndexPath *index = [NSIndexPath indexPathWithIndexes:path length:_depth];
@@ -123,11 +124,9 @@
     [index getIndexes:indices];
     
     BOOL isContained = YES;
-    for (NSInteger i=0; i<_depth; ++i) {
-        if (_dimensionArray[i] < indices[i]) {
-            isContained = NO;
-            break;
-        }
+    for (NSInteger i = 0; i < _depth; ++i) {
+        
+        if (_dimensionArray[i] < indices[i]) { isContained = NO; break; }
     }
     
     free(indices);
@@ -136,7 +135,7 @@
 
 - (void)mapIndicesToBlock:(BKObjectTensorMapIndexPathBlock)block
 {
-    for (NSInteger i=0; i<[_array count]; ++i)
+    for (NSInteger i = 0; i < _array.count; ++i)
         block([self indexPathForPosition:i]);
 }
 

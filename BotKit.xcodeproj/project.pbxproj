@@ -20,6 +20,9 @@
 		A4E91E4083C74402BCEE376D /* libPods-BotKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 885652A913F44864AF910A33 /* libPods-BotKitTests.a */; };
 		E4DC703E16A86F4A00A22D3C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DC703D16A86F4A00A22D3C /* Accelerate.framework */; };
 		F81FAE1116A0F8B4005CDF42 /* BKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A201C116A09FCD007C661D /* BKAppDelegate.m */; };
+		F88295D416DF053E0080BF06 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DC703D16A86F4A00A22D3C /* Accelerate.framework */; };
+		F88295D616DF069F0080BF06 /* NSArray+EnumerationSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F88295D516DF069F0080BF06 /* NSArray+EnumerationSpec.m */; };
+		F88295D916DF09690080BF06 /* NSArray+Enumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = F88295D816DF09690080BF06 /* NSArray+Enumeration.m */; };
 		F8A201A916A09E7B007C661D /* NSArray+ObjectAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A2019216A09E7B007C661D /* NSArray+ObjectAccess.m */; };
 		F8A201AA16A09E7B007C661D /* NSArray+ObjectAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A2019216A09E7B007C661D /* NSArray+ObjectAccess.m */; };
 		F8A201AB16A09E7B007C661D /* NSData+Base64Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A2019416A09E7B007C661D /* NSData+Base64Encoding.m */; };
@@ -77,6 +80,9 @@
 		7A40087F2E79497CAB312DC7 /* Pods-BotKitTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BotKitTests.xcconfig"; path = "Pods/Pods-BotKitTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		885652A913F44864AF910A33 /* libPods-BotKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BotKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4DC703D16A86F4A00A22D3C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		F88295D516DF069F0080BF06 /* NSArray+EnumerationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+EnumerationSpec.m"; sourceTree = "<group>"; };
+		F88295D716DF09690080BF06 /* NSArray+Enumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Enumeration.h"; sourceTree = "<group>"; };
+		F88295D816DF09690080BF06 /* NSArray+Enumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Enumeration.m"; sourceTree = "<group>"; };
 		F8A2018F16A09E7B007C661D /* BotKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BotKit.h; sourceTree = "<group>"; };
 		F8A2019116A09E7B007C661D /* NSArray+ObjectAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ObjectAccess.h"; sourceTree = "<group>"; };
 		F8A2019216A09E7B007C661D /* NSArray+ObjectAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ObjectAccess.m"; sourceTree = "<group>"; };
@@ -107,7 +113,6 @@
 		F8A201C616A09FCD007C661D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		F8A201C816A09FCD007C661D /* BotKit-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "BotKit-Info.plist"; sourceTree = "<group>"; };
 		F8A201CA16A09FCD007C661D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F8A201CC16A09FCD007C661D /* BKCoreDataManagerSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCoreDataManagerSpec.h; sourceTree = "<group>"; };
 		F8A201CD16A09FCD007C661D /* BKCoreDataManagerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCoreDataManagerSpec.m; sourceTree = "<group>"; };
 		F8FEDDC816A0B7960073BB3A /* BotKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BotKit-Prefix.pch"; sourceTree = "<group>"; };
 		F8FEDDC916A0B8D80073BB3A /* BotKitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BotKitTests-Prefix.pch"; sourceTree = "<group>"; };
@@ -138,6 +143,7 @@
 				4DDE4A2E16620785001707F4 /* Foundation.framework in Frameworks */,
 				4DDE4A2F16620785001707F4 /* CoreData.framework in Frameworks */,
 				A4E91E4083C74402BCEE376D /* libPods-BotKitTests.a in Frameworks */,
+				F88295D416DF053E0080BF06 /* Accelerate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +225,8 @@
 				F8A2019E16A09E7B007C661D /* UIColor+Serialization.m */,
 				F8A2019F16A09E7B007C661D /* UIViewController+SegueIdentifier.h */,
 				F8A201A016A09E7B007C661D /* UIViewController+SegueIdentifier.m */,
+				F88295D716DF09690080BF06 /* NSArray+Enumeration.h */,
+				F88295D816DF09690080BF06 /* NSArray+Enumeration.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -285,8 +293,8 @@
 		F8A201CB16A09FCD007C661D /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				F8A201CC16A09FCD007C661D /* BKCoreDataManagerSpec.h */,
 				F8A201CD16A09FCD007C661D /* BKCoreDataManagerSpec.m */,
+				F88295D516DF069F0080BF06 /* NSArray+EnumerationSpec.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -430,6 +438,7 @@
 				F8A201BD16A09E7B007C661D /* BKCoreDataManager.m in Sources */,
 				F8A201D816A09FCD007C661D /* main.m in Sources */,
 				F81FAE1116A0F8B4005CDF42 /* BKAppDelegate.m in Sources */,
+				F88295D916DF09690080BF06 /* NSArray+Enumeration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +460,7 @@
 				F8A201CF16A09FCD007C661D /* BKAppDelegate.m in Sources */,
 				F8A201D916A09FCD007C661D /* main.m in Sources */,
 				F8A201DB16A09FCD007C661D /* BKCoreDataManagerSpec.m in Sources */,
+				F88295D616DF069F0080BF06 /* NSArray+EnumerationSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

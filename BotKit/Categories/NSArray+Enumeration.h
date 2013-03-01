@@ -13,5 +13,6 @@ typedef BOOL (^BKSelectionBlock)(id object);
 
 - (NSArray *)mappedArrayWithBlock:(BKEnumerationBlock)enumerationBlock;
 - (NSArray *)selectedArrayWithBlock:(BKSelectionBlock)selectionBlock;
+- (NSArray *)rejectedArrayWithBlock:(BKSelectionBlock)selectionBlock;
 
 @end

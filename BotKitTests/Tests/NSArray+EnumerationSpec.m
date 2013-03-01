@@ -41,12 +41,27 @@ describe(@"selectedArrayWithBlock:", ^{
         [[theValue(newArray == array) should] beFalse];
     });
 
-    it(@"returns a filtered array", ^{
+    it(@"returns a filtered array by selecting objects", ^{
         NSArray *newArray = [array selectedArrayWithBlock:^BOOL (NSString *string) {
             return [string isEqualToString:@"bar"];
         }];
 
         [[newArray should] equal:@[@"bar"]];
+    });
+});
+
+describe(@"rejectedArrayWithBlock:", ^{
+    it(@"returns a new array", ^{
+        NSArray *newArray = [array rejectedArrayWithBlock:^BOOL (NSString *string) { return YES; }];
+        [[theValue(newArray == array) should] beFalse];
+    });
+
+    it(@"returns a filtered array by rejecting objects", ^{
+        NSArray *newArray = [array rejectedArrayWithBlock:^BOOL (NSString *string) {
+            return [string isEqualToString:@"bar"];
+        }];
+
+        [[newArray should] equal:@[@"foo", @"baz"]];
     });
 });
 

@@ -34,4 +34,15 @@
     return [NSArray arrayWithArray:returnArray];
 }
 
+- (NSArray *)rejectedArrayWithBlock:(BKSelectionBlock)selectionBlock
+{
+    NSMutableArray *returnArray = [NSMutableArray array];
+
+    for (id object in self) {
+        if (!selectionBlock(object)) [returnArray addObject:object];
+    }
+
+    return [NSArray arrayWithArray:returnArray];
+}
+
 @end

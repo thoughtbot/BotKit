@@ -10,6 +10,8 @@
 
 @implementation NSArray (Enumeration)
 
+#pragma mark - Public Methods
+
 - (NSArray *)mappedArrayWithBlock:(BKEnumerationBlock)enumerationBlock
 {
     NSMutableArray *returnArray = [NSMutableArray array];
@@ -23,12 +25,12 @@
     return [NSArray arrayWithArray:returnArray];
 }
 
-- (NSArray *)selectedArrayWithBlock:(BKSelectionBlock)selectionBlock
+- (NSArray *)arrayBySelectingObjectsWithBlock:(BKSelectionBlock)selectionBlock
 {
     return [self filteredArrayWithComparisonBlock:selectionBlock shouldSelect:YES];
 }
 
-- (NSArray *)rejectedArrayWithBlock:(BKSelectionBlock)selectionBlock
+- (NSArray *)arrayByRejectingObjectsWithBlock:(BKSelectionBlock)selectionBlock
 {
     return [self filteredArrayWithComparisonBlock:selectionBlock shouldSelect:NO];
 }

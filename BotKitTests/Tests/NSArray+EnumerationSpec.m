@@ -35,14 +35,14 @@ describe(@"mappedArrayWithBlock:", ^{
     });
 });
 
-describe(@"selectedArrayWithBlock:", ^{
+describe(@"arrayBySelectingObjectsWithBlock:", ^{
     it(@"returns a new array", ^{
-        NSArray *newArray = [array selectedArrayWithBlock:^BOOL (NSString *string) { return YES; }];
+        NSArray *newArray = [array arrayBySelectingObjectsWithBlock:^BOOL (NSString *string) { return YES; }];
         [[theValue(newArray == array) should] beFalse];
     });
 
     it(@"returns a filtered array by selecting objects", ^{
-        NSArray *newArray = [array selectedArrayWithBlock:^BOOL (NSString *string) {
+        NSArray *newArray = [array arrayBySelectingObjectsWithBlock:^BOOL (NSString *string) {
             return [string isEqualToString:@"bar"];
         }];
 
@@ -52,12 +52,12 @@ describe(@"selectedArrayWithBlock:", ^{
 
 describe(@"rejectedArrayWithBlock:", ^{
     it(@"returns a new array", ^{
-        NSArray *newArray = [array rejectedArrayWithBlock:^BOOL (NSString *string) { return YES; }];
+        NSArray *newArray = [array arrayByRejectingObjectsWithBlock:^BOOL (NSString *string) { return YES; }];
         [[theValue(newArray == array) should] beFalse];
     });
 
     it(@"returns a filtered array by rejecting objects", ^{
-        NSArray *newArray = [array rejectedArrayWithBlock:^BOOL (NSString *string) {
+        NSArray *newArray = [array arrayByRejectingObjectsWithBlock:^BOOL (NSString *string) {
             return [string isEqualToString:@"bar"];
         }];
 

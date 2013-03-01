@@ -25,21 +25,23 @@
 
 - (NSArray *)selectedArrayWithBlock:(BKSelectionBlock)selectionBlock
 {
-    NSMutableArray *returnArray = [NSMutableArray array];
-
-    for (id object in self) {
-        if (selectionBlock(object)) [returnArray addObject:object];
-    }
-
-    return [NSArray arrayWithArray:returnArray];
+    return [self filteredArrayWithComparisonBlock:selectionBlock shouldSelect:YES];
 }
 
 - (NSArray *)rejectedArrayWithBlock:(BKSelectionBlock)selectionBlock
 {
+    return [self filteredArrayWithComparisonBlock:selectionBlock shouldSelect:NO];
+}
+
+#pragma mark - Private Methods
+
+- (NSArray *)filteredArrayWithComparisonBlock:(BKSelectionBlock)comparisonBlock shouldSelect:(BOOL)shouldSelect
+{
     NSMutableArray *returnArray = [NSMutableArray array];
 
     for (id object in self) {
-        if (!selectionBlock(object)) [returnArray addObject:object];
+        if (comparisonBlock(object) && shouldSelect) [returnArray addObject:object];
+        else if (!comparisonBlock(object) && !shouldSelect) [returnArray addObject:object];
     }
 
     return [NSArray arrayWithArray:returnArray];

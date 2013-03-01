@@ -18,7 +18,7 @@ beforeAll(^{
 describe(@"mappedArrayWithBlock:", ^{
     it(@"returns a new array", ^{
         NSArray *newArray = [array mappedArrayWithBlock:^id (id object){ return @YES; }];
-        [[newArray shouldNot] equal:array];
+        [[theValue(newArray == array) should] beFalse];
     });
 
     it(@"ignores nil objects", ^{
@@ -32,6 +32,21 @@ describe(@"mappedArrayWithBlock:", ^{
         }];
 
         [[newArray should] equal:@[@"FOO", @"BAR", @"BAZ"]];
+    });
+});
+
+describe(@"selectedArrayWithBlock:", ^{
+    it(@"returns a new array", ^{
+        NSArray *newArray = [array selectedArrayWithBlock:^BOOL (NSString *string) { return YES; }];
+        [[theValue(newArray == array) should] beFalse];
+    });
+
+    it(@"returns a filtered array", ^{
+        NSArray *newArray = [array selectedArrayWithBlock:^BOOL (NSString *string) {
+            return [string isEqualToString:@"bar"];
+        }];
+
+        [[newArray should] equal:@[@"bar"]];
     });
 });
 

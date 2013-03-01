@@ -7,9 +7,11 @@
 //
 
 typedef id (^BKEnumerationBlock)(id object);
+typedef BOOL (^BKSelectionBlock)(id object);
 
 @interface NSArray (Enumeration)
 
 - (NSArray *)mappedArrayWithBlock:(BKEnumerationBlock)enumerationBlock;
+- (NSArray *)selectedArrayWithBlock:(BKSelectionBlock)selectionBlock;
 
 @end

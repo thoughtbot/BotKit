@@ -77,6 +77,7 @@ static NSInteger const multiplier = 100000;
     
     free(scaled);
     free(scaledFitness);
+    free(weights);
     
     return [self objectAtIndex:index];
 }

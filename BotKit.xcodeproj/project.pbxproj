@@ -18,6 +18,7 @@
 		4DDE4A2E16620785001707F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDE4A0A16620785001707F4 /* Foundation.framework */; };
 		4DDE4A2F16620785001707F4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDE4A0E16620785001707F4 /* CoreData.framework */; };
 		A4E91E4083C74402BCEE376D /* libPods-BotKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 885652A913F44864AF910A33 /* libPods-BotKitTests.a */; };
+		E43DD83F16BB0FCE00FA4DAA /* NSCountedSet+ObjectAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = E43DD83E16BB0FCE00FA4DAA /* NSCountedSet+ObjectAccess.m */; };
 		F81FAE1116A0F8B4005CDF42 /* BKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A201C116A09FCD007C661D /* BKAppDelegate.m */; };
 		F8A201A916A09E7B007C661D /* NSArray+ObjectAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A2019216A09E7B007C661D /* NSArray+ObjectAccess.m */; };
 		F8A201AA16A09E7B007C661D /* NSArray+ObjectAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A2019216A09E7B007C661D /* NSArray+ObjectAccess.m */; };
@@ -75,6 +76,8 @@
 		4DDE4A2B16620785001707F4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		7A40087F2E79497CAB312DC7 /* Pods-BotKitTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BotKitTests.xcconfig"; path = "Pods/Pods-BotKitTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		885652A913F44864AF910A33 /* libPods-BotKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BotKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43DD83D16BB0FCE00FA4DAA /* NSCountedSet+ObjectAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCountedSet+ObjectAccess.h"; sourceTree = "<group>"; };
+		E43DD83E16BB0FCE00FA4DAA /* NSCountedSet+ObjectAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCountedSet+ObjectAccess.m"; sourceTree = "<group>"; };
 		F8A2018F16A09E7B007C661D /* BotKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BotKit.h; sourceTree = "<group>"; };
 		F8A2019116A09E7B007C661D /* NSArray+ObjectAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ObjectAccess.h"; sourceTree = "<group>"; };
 		F8A2019216A09E7B007C661D /* NSArray+ObjectAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ObjectAccess.m"; sourceTree = "<group>"; };
@@ -215,6 +218,8 @@
 				F8A2019E16A09E7B007C661D /* UIColor+Serialization.m */,
 				F8A2019F16A09E7B007C661D /* UIViewController+SegueIdentifier.h */,
 				F8A201A016A09E7B007C661D /* UIViewController+SegueIdentifier.m */,
+				E43DD83D16BB0FCE00FA4DAA /* NSCountedSet+ObjectAccess.h */,
+				E43DD83E16BB0FCE00FA4DAA /* NSCountedSet+ObjectAccess.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -426,6 +431,7 @@
 				F8A201BD16A09E7B007C661D /* BKCoreDataManager.m in Sources */,
 				F8A201D816A09FCD007C661D /* main.m in Sources */,
 				F81FAE1116A0F8B4005CDF42 /* BKAppDelegate.m in Sources */,
+				E43DD83F16BB0FCE00FA4DAA /* NSCountedSet+ObjectAccess.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

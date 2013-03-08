@@ -15,10 +15,4 @@ Pod::Spec.new do |s|
   s.source_files = 'BotKit/**/*.{m,h}'
   s.requires_arc = true
   s.framework    = 'CoreData', 'Accelerate'
-
-  s.prefix_header_contents = <<-EOS
-  #import <Availability.h>
-  #import <CoreData/CoreData.h>
-EOS
-
 end

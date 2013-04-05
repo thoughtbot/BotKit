@@ -25,6 +25,7 @@
 		4DDE4A2F16620785001707F4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDE4A0E16620785001707F4 /* CoreData.framework */; };
 		A4E91E4083C74402BCEE376D /* libPods-BotKitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 885652A913F44864AF910A33 /* libPods-BotKitTests.a */; };
 		E418618E171E4E80007C6A4E /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = E418618D171E4E80007C6A4E /* UIView+Frame.m */; };
+		E4B7F73116EAABFA005641BA /* NSCountedSet+ObjectAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B7F73016EAABFA005641BA /* NSCountedSet+ObjectAccess.m */; };
 		E4DC703E16A86F4A00A22D3C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DC703D16A86F4A00A22D3C /* Accelerate.framework */; };
 		F81FAE1116A0F8B4005CDF42 /* BKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A201C116A09FCD007C661D /* BKAppDelegate.m */; };
 		F88295D416DF053E0080BF06 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4DC703D16A86F4A00A22D3C /* Accelerate.framework */; };
@@ -90,6 +91,8 @@
 		885652A913F44864AF910A33 /* libPods-BotKitTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BotKitTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E418618C171E4E80007C6A4E /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		E418618D171E4E80007C6A4E /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		E4B7F72F16EAABF9005641BA /* NSCountedSet+ObjectAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCountedSet+ObjectAccess.h"; sourceTree = "<group>"; };
+		E4B7F73016EAABFA005641BA /* NSCountedSet+ObjectAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCountedSet+ObjectAccess.m"; sourceTree = "<group>"; };
 		E4DC703D16A86F4A00A22D3C /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		F88295D516DF069F0080BF06 /* NSArray+EnumerationSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+EnumerationSpec.m"; sourceTree = "<group>"; };
 		F88295D716DF09690080BF06 /* NSArray+Enumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Enumeration.h"; sourceTree = "<group>"; };
@@ -223,6 +226,8 @@
 		F8A2019016A09E7B007C661D /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				E4B7F72F16EAABF9005641BA /* NSCountedSet+ObjectAccess.h */,
+				E4B7F73016EAABFA005641BA /* NSCountedSet+ObjectAccess.m */,
 				F8A2019116A09E7B007C661D /* NSArray+ObjectAccess.h */,
 				F8A2019216A09E7B007C661D /* NSArray+ObjectAccess.m */,
 				F8A2019316A09E7B007C661D /* NSData+Base64Encoding.h */,
@@ -480,6 +485,7 @@
 				4DD22C1D173E2977003E7039 /* BKManagedTableViewController.m in Sources */,
 				4DD22C1F173E2977003E7039 /* BKManagedViewController.m in Sources */,
 				4DD22C23173E2989003E7039 /* BKCoreDataManager.m in Sources */,
+				E4B7F73116EAABFA005641BA /* NSCountedSet+ObjectAccess.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

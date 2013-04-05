@@ -13,7 +13,7 @@
 
 #pragma mark - Function Helpers
 
-NSInteger comp(const void *i, const void *j)
+NSInteger compare(const void *i, const void *j)
 {
     return *(NSInteger *)i - *(NSInteger *)j;
 }
@@ -22,8 +22,8 @@ NSInteger comp(const void *i, const void *j)
 
 - (id)randomObject
 {
-    NSArray *setArr = [self allObjects];
-    return [setArr objectAtIndex:arc4random()%[setArr count]];
+    NSArray *setArray = [self allObjects];
+    return [setArray objectAtIndex:arc4random()%[setArray count]];
 }
 
 - (id)randomObjectUsingCountsAsWeights
@@ -84,7 +84,7 @@ NSInteger comp(const void *i, const void *j)
         c++;
     }
 
-    qsort(countsCArray, size, sizeof(NSInteger), comp);
+    qsort(countsCArray, size, sizeof(NSInteger), compare);
 
     for (NSInteger i = size - 1; i >= size - N; i--) {
         NSInteger num = countsCArray[i];
@@ -105,7 +105,7 @@ NSInteger comp(const void *i, const void *j)
     return total;
 }
 
-- (NSArray *)allObjectsFlattened
+- (NSArray *)flattenedObjects
 {
     NSMutableArray *array = [[NSMutableArray alloc] init];
     for (id obj in self) {

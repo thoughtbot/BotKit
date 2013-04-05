@@ -64,6 +64,6 @@
 
  @return Array of size countAllObjects containing objects.
  */
-- (NSArray *)allObjectsFlattened;
+- (NSArray *)flattenedObjects;
 
 @end

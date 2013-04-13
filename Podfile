@@ -1,4 +1,5 @@
 platform :ios
-target :BotKitTests, excusive: true do
+
+target :BotKitTests, exclusive: true do
   pod 'Kiwi'
 end

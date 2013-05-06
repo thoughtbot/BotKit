@@ -6,9 +6,6 @@
 //  Copyright (c) 2012 Mark Adams. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <CoreData/CoreData.h>
-
 @interface BKCoreDataManager : NSObject
 
 @property (strong, nonatomic, readonly) NSManagedObjectContext *managedObjectContext;

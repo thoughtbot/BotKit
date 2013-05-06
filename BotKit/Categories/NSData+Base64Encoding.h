@@ -6,8 +6,6 @@
 //  Copyright (c) 2012 thoughtbot. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 @interface NSData (Base64Encoding)
 
 - (NSString *)base64String;

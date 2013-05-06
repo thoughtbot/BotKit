@@ -6,7 +6,6 @@
 //  Copyright (c) 2012 Mark Adams. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "BKManagedViewController.h"
 
 @interface BKManagedTableViewController : BKManagedViewController <UITableViewDataSource, UITableViewDelegate>

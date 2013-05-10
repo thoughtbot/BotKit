@@ -326,7 +326,7 @@
 				4DDE4A2516620785001707F4 /* Sources */,
 				4DDE4A2616620785001707F4 /* Frameworks */,
 				4DDE4A2716620785001707F4 /* Resources */,
-				4DDE4A2816620785001707F4 /* ShellScript */,
+				F84A295A1733F51000499774 /* Run Unit Tests */,
 				B7EBFCFD89E0457DAE4A37DE /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -391,19 +391,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4DDE4A2816620785001707F4 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
 		B7EBFCFD89E0457DAE4A37DE /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -417,6 +404,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-BotKitTests-resources.sh\"\n";
+		};
+		F84A295A1733F51000499774 /* Run Unit Tests */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Unit Tests";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 

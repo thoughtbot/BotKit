@@ -1,0 +1,3 @@
+language: objective-c
+before_install: "which xctool || brew update && brew install xctool --HEAD"
+script: "xctool test"

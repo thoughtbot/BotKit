@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		4D70987C168991E8000DE8F7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D70987B168991E8000DE8F7 /* QuartzCore.framework */; };
 		4D70987D1689921C000DE8F7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDE4A0C16620785001707F4 /* CoreGraphics.framework */; };
+		4DD22C1C173E2977003E7039 /* BKManagedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD22C19173E2977003E7039 /* BKManagedTableViewController.m */; };
+		4DD22C1D173E2977003E7039 /* BKManagedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD22C19173E2977003E7039 /* BKManagedTableViewController.m */; };
+		4DD22C1E173E2977003E7039 /* BKManagedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD22C1B173E2977003E7039 /* BKManagedViewController.m */; };
+		4DD22C1F173E2977003E7039 /* BKManagedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD22C1B173E2977003E7039 /* BKManagedViewController.m */; };
+		4DD22C22173E2989003E7039 /* BKCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD22C21173E2989003E7039 /* BKCoreDataManager.m */; };
+		4DD22C23173E2989003E7039 /* BKCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DD22C21173E2989003E7039 /* BKCoreDataManager.m */; };
 		4DDE4A0916620785001707F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDE4A0816620785001707F4 /* UIKit.framework */; };
 		4DDE4A0B16620785001707F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDE4A0A16620785001707F4 /* Foundation.framework */; };
 		4DDE4A0D16620785001707F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDE4A0C16620785001707F4 /* CoreGraphics.framework */; };
@@ -39,12 +45,6 @@
 		F8A201B616A09E7B007C661D /* UIColor+Serialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A2019E16A09E7B007C661D /* UIColor+Serialization.m */; };
 		F8A201B716A09E7B007C661D /* UIViewController+SegueIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A201A016A09E7B007C661D /* UIViewController+SegueIdentifier.m */; };
 		F8A201B816A09E7B007C661D /* UIViewController+SegueIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A201A016A09E7B007C661D /* UIViewController+SegueIdentifier.m */; };
-		F8A201B916A09E7B007C661D /* BKManagedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A201A316A09E7B007C661D /* BKManagedTableViewController.m */; };
-		F8A201BA16A09E7B007C661D /* BKManagedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A201A316A09E7B007C661D /* BKManagedTableViewController.m */; };
-		F8A201BB16A09E7B007C661D /* BKManagedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A201A516A09E7B007C661D /* BKManagedViewController.m */; };
-		F8A201BC16A09E7B007C661D /* BKManagedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A201A516A09E7B007C661D /* BKManagedViewController.m */; };
-		F8A201BD16A09E7B007C661D /* BKCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A201A816A09E7B007C661D /* BKCoreDataManager.m */; };
-		F8A201BE16A09E7B007C661D /* BKCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A201A816A09E7B007C661D /* BKCoreDataManager.m */; };
 		F8A201CF16A09FCD007C661D /* BKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A201C116A09FCD007C661D /* BKAppDelegate.m */; };
 		F8A201D016A09FCD007C661D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A201C416A09FCD007C661D /* Default-568h@2x.png */; };
 		F8A201D116A09FCD007C661D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A201C416A09FCD007C661D /* Default-568h@2x.png */; };
@@ -70,6 +70,14 @@
 
 /* Begin PBXFileReference section */
 		4D70987B168991E8000DE8F7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		4DD22C18173E2977003E7039 /* BKManagedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKManagedTableViewController.h; path = BotKit/CoreData/Controllers/BKManagedTableViewController.h; sourceTree = SOURCE_ROOT; };
+		4DD22C19173E2977003E7039 /* BKManagedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKManagedTableViewController.m; path = BotKit/CoreData/Controllers/BKManagedTableViewController.m; sourceTree = SOURCE_ROOT; };
+		4DD22C1A173E2977003E7039 /* BKManagedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKManagedViewController.h; path = BotKit/CoreData/Controllers/BKManagedViewController.h; sourceTree = SOURCE_ROOT; };
+		4DD22C1B173E2977003E7039 /* BKManagedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKManagedViewController.m; path = BotKit/CoreData/Controllers/BKManagedViewController.m; sourceTree = SOURCE_ROOT; };
+		4DD22C20173E2989003E7039 /* BKCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKCoreDataManager.h; path = BotKit/CoreData/Models/BKCoreDataManager.h; sourceTree = SOURCE_ROOT; };
+		4DD22C21173E2989003E7039 /* BKCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BKCoreDataManager.m; path = BotKit/CoreData/Models/BKCoreDataManager.m; sourceTree = SOURCE_ROOT; };
+		4DD22C25173E2D13003E7039 /* BKCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BKCoreData.h; path = CoreData/BKCoreData.h; sourceTree = "<group>"; };
+		4DD22C26173E2DA6003E7039 /* BKCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCategories.h; sourceTree = "<group>"; };
 		4DDE4A0416620785001707F4 /* BotKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BotKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DDE4A0816620785001707F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4DDE4A0A16620785001707F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,12 +108,6 @@
 		F8A2019E16A09E7B007C661D /* UIColor+Serialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Serialization.m"; sourceTree = "<group>"; };
 		F8A2019F16A09E7B007C661D /* UIViewController+SegueIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SegueIdentifier.h"; sourceTree = "<group>"; };
 		F8A201A016A09E7B007C661D /* UIViewController+SegueIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SegueIdentifier.m"; sourceTree = "<group>"; };
-		F8A201A216A09E7B007C661D /* BKManagedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKManagedTableViewController.h; sourceTree = "<group>"; };
-		F8A201A316A09E7B007C661D /* BKManagedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKManagedTableViewController.m; sourceTree = "<group>"; };
-		F8A201A416A09E7B007C661D /* BKManagedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKManagedViewController.h; sourceTree = "<group>"; };
-		F8A201A516A09E7B007C661D /* BKManagedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKManagedViewController.m; sourceTree = "<group>"; };
-		F8A201A716A09E7B007C661D /* BKCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKCoreDataManager.h; sourceTree = "<group>"; };
-		F8A201A816A09E7B007C661D /* BKCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKCoreDataManager.m; sourceTree = "<group>"; };
 		F8A201C016A09FCD007C661D /* BKAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKAppDelegate.h; sourceTree = "<group>"; };
 		F8A201C116A09FCD007C661D /* BKAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKAppDelegate.m; sourceTree = "<group>"; };
 		F8A201C416A09FCD007C661D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -150,6 +152,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DD22C17173E25AA003E7039 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F8A201A116A09E7B007C661D /* Controllers */,
+				F8A201A616A09E7B007C661D /* Models */,
+				4DD22C25173E2D13003E7039 /* BKCoreData.h */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
 		4DDE49F916620785001707F4 = {
 			isa = PBXGroup;
 			children = (
@@ -190,8 +202,7 @@
 			children = (
 				F8A2018F16A09E7B007C661D /* BotKit.h */,
 				F8A2019016A09E7B007C661D /* Categories */,
-				F8A201A116A09E7B007C661D /* Controllers */,
-				F8A201A616A09E7B007C661D /* Models */,
+				4DD22C17173E25AA003E7039 /* CoreData */,
 			);
 			path = BotKit;
 			sourceTree = "<group>";
@@ -227,6 +238,7 @@
 				F8A201A016A09E7B007C661D /* UIViewController+SegueIdentifier.m */,
 				F88295D716DF09690080BF06 /* NSArray+Enumeration.h */,
 				F88295D816DF09690080BF06 /* NSArray+Enumeration.m */,
+				4DD22C26173E2DA6003E7039 /* BKCategories.h */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -234,10 +246,10 @@
 		F8A201A116A09E7B007C661D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F8A201A216A09E7B007C661D /* BKManagedTableViewController.h */,
-				F8A201A316A09E7B007C661D /* BKManagedTableViewController.m */,
-				F8A201A416A09E7B007C661D /* BKManagedViewController.h */,
-				F8A201A516A09E7B007C661D /* BKManagedViewController.m */,
+				4DD22C18173E2977003E7039 /* BKManagedTableViewController.h */,
+				4DD22C19173E2977003E7039 /* BKManagedTableViewController.m */,
+				4DD22C1A173E2977003E7039 /* BKManagedViewController.h */,
+				4DD22C1B173E2977003E7039 /* BKManagedViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -245,8 +257,8 @@
 		F8A201A616A09E7B007C661D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F8A201A716A09E7B007C661D /* BKCoreDataManager.h */,
-				F8A201A816A09E7B007C661D /* BKCoreDataManager.m */,
+				4DD22C20173E2989003E7039 /* BKCoreDataManager.h */,
+				4DD22C21173E2989003E7039 /* BKCoreDataManager.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -434,12 +446,12 @@
 				F8A201B316A09E7B007C661D /* UIColor+AdjustColor.m in Sources */,
 				F8A201B516A09E7B007C661D /* UIColor+Serialization.m in Sources */,
 				F8A201B716A09E7B007C661D /* UIViewController+SegueIdentifier.m in Sources */,
-				F8A201B916A09E7B007C661D /* BKManagedTableViewController.m in Sources */,
-				F8A201BB16A09E7B007C661D /* BKManagedViewController.m in Sources */,
-				F8A201BD16A09E7B007C661D /* BKCoreDataManager.m in Sources */,
 				F8A201D816A09FCD007C661D /* main.m in Sources */,
 				F81FAE1116A0F8B4005CDF42 /* BKAppDelegate.m in Sources */,
 				F88295D916DF09690080BF06 /* NSArray+Enumeration.m in Sources */,
+				4DD22C1C173E2977003E7039 /* BKManagedTableViewController.m in Sources */,
+				4DD22C1E173E2977003E7039 /* BKManagedViewController.m in Sources */,
+				4DD22C22173E2989003E7039 /* BKCoreDataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,13 +467,13 @@
 				F8A201B416A09E7B007C661D /* UIColor+AdjustColor.m in Sources */,
 				F8A201B616A09E7B007C661D /* UIColor+Serialization.m in Sources */,
 				F8A201B816A09E7B007C661D /* UIViewController+SegueIdentifier.m in Sources */,
-				F8A201BA16A09E7B007C661D /* BKManagedTableViewController.m in Sources */,
-				F8A201BC16A09E7B007C661D /* BKManagedViewController.m in Sources */,
-				F8A201BE16A09E7B007C661D /* BKCoreDataManager.m in Sources */,
 				F8A201CF16A09FCD007C661D /* BKAppDelegate.m in Sources */,
 				F8A201D916A09FCD007C661D /* main.m in Sources */,
 				F8A201DB16A09FCD007C661D /* BKCoreDataManagerSpec.m in Sources */,
 				F88295D616DF069F0080BF06 /* NSArray+EnumerationSpec.m in Sources */,
+				4DD22C1D173E2977003E7039 /* BKManagedTableViewController.m in Sources */,
+				4DD22C1F173E2977003E7039 /* BKManagedViewController.m in Sources */,
+				4DD22C23173E2989003E7039 /* BKCoreDataManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

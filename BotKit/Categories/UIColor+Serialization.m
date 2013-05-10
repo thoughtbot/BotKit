@@ -1,3 +1,11 @@
+//
+//  UIColor+AdjustColor.m
+//  CountIt
+//
+//  Created by Mark Adams on 10/2/12.
+//  Copyright (c) 2012 thoughtbot. All rights reserved.
+//
+
 #import "UIColor+Serialization.h"
 
 @implementation UIColor (Serialization)

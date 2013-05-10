@@ -3,7 +3,7 @@
 //  CountIt
 //
 //  Created by Mark Adams on 10/2/12.
-//  Copyright (c) 2012 CountIt. All rights reserved.
+//  Copyright (c) 2012 thoughtbot. All rights reserved.
 //
 
 #import "UIColor+AdjustColor.h"

@@ -6,8 +6,6 @@
 //  Copyright (c) 2012 Mark Adams. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 @interface NSArray (ObjectAccess)
 
 - (id)firstObject;

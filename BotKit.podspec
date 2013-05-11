@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "BotKit"
-  s.version      = "0.1.6"
+  s.version      = "0.1.7"
   s.summary      = "BotKit is a Cocoa Touch static library for use in iOS projects."
   s.homepage     = "https://github.com/thoughtbot/BotKit"
   s.license      = 'MIT'

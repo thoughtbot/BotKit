@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.authors      = { "Mark Adams" => "mark@thoughtbot.com", "Gordon Fontenot" => "gordon@thoughtbot.com", "Diana Zmuda" => "diana@thoughtbot.com", "Theo Calmes" => "theo@thoughtbot.com" }
   s.source       = {
     :git => "https://github.com/thoughtbot/BotKit.git",
-    :tag => "0.1.6"
+    :tag => "0.1.7"
   }
   s.source_files = 'BotKit/'
 

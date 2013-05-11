@@ -6,4 +6,5 @@
     #import <CoreData/CoreData.h>
 
     #import "Kiwi.h"
+    #import "BotKit.h"
 #endif

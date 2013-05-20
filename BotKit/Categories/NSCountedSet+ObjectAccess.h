@@ -35,20 +35,20 @@
 
  @return Set object.
  */
-- (id)objectWithHighestCount;
+- (id)mostCommonObject;
 
 /** Returns the object with the lowest count. If there is a tie then the first object is returned.
 
  @return Set object.
  */
-- (id)objectWithLowestCount;
+- (id)leastCommonObject;
 
 /** Returns an array with the top N most counted objects from the set. Ordered by count value.
  
  @param numberOfObjects Number of objects returned.
  @return Array of objects.
  */
-- (NSArray *)objectsWithHighestCounts:(NSInteger)numberOfObjects;
+- (NSArray *)arrayOfMostCommonObjectsWithLimit:(NSInteger)numberOfObjects;
 
 ///---------------------------------------------------------------------------------------
 /// @name Misc

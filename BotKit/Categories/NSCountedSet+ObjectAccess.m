@@ -37,7 +37,7 @@ NSInteger compare(const void *i, const void *j)
     return [objects randomObjectUsingFastWeights:weights];
 }
 
-- (id)objectWithHighestCount
+- (id)mostCommonObject
 {
     id returnObj = nil;
     NSInteger max = -NSIntegerMax;
@@ -50,7 +50,7 @@ NSInteger compare(const void *i, const void *j)
     return returnObj;
 }
 
-- (id)objectWithLowestCount
+- (id)leastCommonObject
 {
     id returnObj = nil;
     NSInteger min = NSIntegerMax;
@@ -63,7 +63,7 @@ NSInteger compare(const void *i, const void *j)
     return returnObj;
 }
 
-- (NSArray *)objectsWithHighestCounts:(NSInteger)N;
+- (NSArray *)arrayOfMostCommonObjectsWithLimit:(NSInteger)N;
 {
     NSInteger size = self.count;
 

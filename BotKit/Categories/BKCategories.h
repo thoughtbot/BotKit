@@ -7,6 +7,7 @@
 //
 
 #import "NSArray+ObjectAccess.h"
+#import "NSCountedSet+ObjectAccess.h"
 #import "NSData+Base64Encoding.h"
 #import "NSDate+RelativeDates.h"
 #import "NSObject+BKCoding.h"

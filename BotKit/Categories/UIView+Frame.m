@@ -8,7 +8,7 @@
 
 #import "UIView+Frame.h"
 
-CGPoint rectCenter(CGRect rect)
+CGPoint BKRectCenter(CGRect rect)
 {
     return CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect));
 }
@@ -22,19 +22,12 @@ CGRect centerRect(CGRect rect, CGPoint center)
     return r;
 }
 
-CGRect scaleRect(CGRect rect, CGPoint scale)
-{
-    CGPoint iniCenter = rectCenter(rect);
-    CGRect scaled = CGRectMake(0, 0, rect.size.width*scale.x, rect.size.height*scale.y);
-    return centerRect(scaled, iniCenter);
-}
-
-CGPoint addPoints(CGPoint p1, CGPoint p2)
+CGPoint BKAddPoints(CGPoint p1, CGPoint p2)
 {
     return CGPointMake(p1.x + p2.x, p1.y + p2.y);
 }
 
-CGRect addRects(CGRect r1, CGRect r2)
+CGRect BKAddRects(CGRect r1, CGRect r2)
 {
     return CGRectMake(r1.origin.x + r2.origin.x,
                       r1.origin.y + r2.origin.y,
@@ -42,37 +35,37 @@ CGRect addRects(CGRect r1, CGRect r2)
                       r1.size.height + r2.size.height);
 }
 
-CGRect addPointToRect(CGRect rect, CGPoint point)
+CGRect BKAddPointToRect(CGRect rect, CGPoint point)
 {
     return CGRectMake(rect.origin.x + point.x, rect.origin.y + point.y, rect.size.width, rect.size.height);
 }
 
-CGRect addSizeToRect(CGRect rect, CGSize size)
+CGRect BKAddSizeToRect(CGRect rect, CGSize size)
 {
     return CGRectMake(rect.origin.x, rect.origin.y, rect.size.width + size.width, rect.size.height + rect.size.height);
 }
 
-CGRect rectFromPoints(CGPoint top, CGPoint bottom)
+CGRect BKRectFromPoints(CGPoint top, CGPoint bottom)
 {
     return CGRectMake(top.x, top.y, bottom.x - top.x, bottom.y - top.y);
 }
 
-CGPoint topLeftCorner(CGRect rect)
+CGPoint BKTopLeftCorner(CGRect rect)
 {
     return rect.origin;
 }
 
-CGPoint topRightCorner(CGRect rect)
+CGPoint BKTopRightCorner(CGRect rect)
 {
     return CGPointMake(CGRectGetMaxX(rect), CGRectGetMinY(rect));
 }
 
-CGPoint bottomLeftCorner(CGRect rect)
+CGPoint BKBottomLeftCorner(CGRect rect)
 {
     return CGPointMake(CGRectGetMinX(rect), CGRectGetMaxY(rect));
 }
 
-CGPoint bottomRightCorner(CGRect rect)
+CGPoint BKBottomRightCorner(CGRect rect)
 {
     return CGPointMake(CGRectGetMaxX(rect), CGRectGetMaxY(rect));
 }

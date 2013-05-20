@@ -6,21 +6,21 @@
 //  Copyright (c) 2013 thoughtbot. All rights reserved.
 //
 
-CGPoint rectCenter(CGRect rect);
-CGRect centerRect(CGRect rect, CGPoint center);
-CGRect scaleRect(CGRect rect, CGPoint scale);
+CGPoint BKRectCenter(CGRect rect);
+CGRect BKCenterRect(CGRect rect, CGPoint center);
+CGRect BKScaleRect(CGRect rect, CGPoint scale);
 
-CGPoint addPoints(CGPoint p1, CGPoint p2);
+CGPoint BKAddPoints(CGPoint p1, CGPoint p2);
 
-CGRect addPointToRect(CGRect rect, CGPoint point);
-CGRect addSizeToRect(CGRect rect, CGSize size);
+CGRect BKAddPointToRect(CGRect rect, CGPoint point);
+CGRect BKAddSizeToRect(CGRect rect, CGSize size);
 
-CGRect rectFromPoints(CGPoint top, CGPoint bottom);
+CGRect BKRectFromPoints(CGPoint top, CGPoint bottom);
 
-CGPoint topLeftCorner(CGRect rect);
-CGPoint bottomLeftCorner(CGRect rect);
-CGPoint topRightCorner(CGRect rect);
-CGPoint bottomRightCorner(CGRect rect);
+CGPoint BKTopLeftCorner(CGRect rect);
+CGPoint BKBottomLeftCorner(CGRect rect);
+CGPoint BKTopRightCorner(CGRect rect);
+CGPoint BKBottomRightCorner(CGRect rect);
 
 @interface UIView (Frame)
 

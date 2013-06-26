@@ -9,8 +9,12 @@
 CGPoint BKRectCenter(CGRect rect);
 CGRect BKCenterRect(CGRect rect, CGPoint center);
 CGRect BKScaleRect(CGRect rect, CGPoint scale);
+CGRect BKScaleRect1D(CGRect rect, float scale);
 
 CGPoint BKAddPoints(CGPoint p1, CGPoint p2);
+CGPoint BKSubPoints(CGPoint p1, CGPoint p2);
+CGPoint BKScalePoint(CGPoint p1, CGPoint scale);
+CGPoint BKScalePoint1D(CGPoint p1, float scale);
 
 CGRect BKAddPointToRect(CGRect rect, CGPoint point);
 CGRect BKAddSizeToRect(CGRect rect, CGSize size);

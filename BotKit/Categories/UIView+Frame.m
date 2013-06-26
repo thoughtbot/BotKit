@@ -13,7 +13,7 @@ CGPoint BKRectCenter(CGRect rect)
     return CGPointMake(CGRectGetMidX(rect), CGRectGetMidY(rect));
 }
 
-CGRect centerRect(CGRect rect, CGPoint center)
+CGRect BKCenterRect(CGRect rect, CGPoint center)
 {
     CGRect r = CGRectMake(center.x - rect.size.width/2.0,
                           center.y - rect.size.height/2.0,
@@ -22,9 +22,38 @@ CGRect centerRect(CGRect rect, CGPoint center)
     return r;
 }
 
+CGRect BKScaleRect(CGRect rect, CGPoint scale)
+{
+    CGPoint iniCenter = BKRectCenter(rect);
+    CGRect scaled = CGRectMake(0, 0, rect.size.width*scale.x, rect.size.height*scale.y);
+    return BKCenterRect(scaled, iniCenter);
+}
+
+CGRect BKScaleRect1D(CGRect rect, float scale)
+{
+    CGPoint iniCenter = BKRectCenter(rect);
+    CGRect scaled = CGRectMake(0, 0, rect.size.width*scale, rect.size.height*scale);
+    return BKCenterRect(scaled, iniCenter);
+}
+
 CGPoint BKAddPoints(CGPoint p1, CGPoint p2)
 {
     return CGPointMake(p1.x + p2.x, p1.y + p2.y);
+}
+
+CGPoint BKSubPoints(CGPoint p1, CGPoint p2)
+{
+    return CGPointMake(p1.x - p2.x, p1.y - p2.y);
+}
+
+CGPoint BKScalePoint(CGPoint p1, CGPoint scale)
+{
+    return CGPointMake(p1.x * scale.x, p1.y * scale.y);
+}
+
+CGPoint BKScalePoint1D(CGPoint p1, float scale)
+{
+    return CGPointMake(p1.x * scale, p1.y * scale);
 }
 
 CGRect BKAddRects(CGRect r1, CGRect r2)

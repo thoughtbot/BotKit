@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '5.0'
   s.requires_arc = true
-  s.preferred_dependency = 'Categories'
+  s.default_subspec = 'Categories'
 
   s.subspec 'Categories' do |c|
     c.source_files = 'BotKit/Categories/*.{m,h}'

@@ -3,7 +3,7 @@
 //  BotKit
 //
 //  Created by theo on 3/8/13.
-//  Copyright (c) 2013 thoughtbot. All rights reserved.
+//  Copyright (c) 2014 thoughtbot. All rights reserved.
 //
 
 /** This category adds a set of methods for easier accessing of objects in an NSCountedSet.

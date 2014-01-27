@@ -3,7 +3,7 @@
 //  Weather
 //
 //  Created by Mark Adams on 7/7/12.
-//  Copyright (c) 2012 Mark Adams. All rights reserved.
+//  Copyright (c) 2014 Mark Adams. All rights reserved.
 //
 
 #import "NSObject+BKCoding.h"

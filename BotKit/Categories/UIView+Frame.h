@@ -3,7 +3,7 @@
 //  BotKit
 //
 //  Created by theo on 4/16/13.
-//  Copyright (c) 2013 thoughtbot. All rights reserved.
+//  Copyright (c) 2014 thoughtbot. All rights reserved.
 //
 
 CGPoint BKRectCenter(CGRect rect);

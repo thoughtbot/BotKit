@@ -3,7 +3,7 @@
 //  BotKit
 //
 //  Created by Mark Adams on 10/24/12.
-//  Copyright (c) 2012 thoughtbot. All rights reserved.
+//  Copyright (c) 2014 thoughtbot. All rights reserved.
 //
 
 #import "UIViewController+SegueIdentifier.h"

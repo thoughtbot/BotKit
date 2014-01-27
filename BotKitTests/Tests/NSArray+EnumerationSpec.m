@@ -3,7 +3,7 @@
 //  BotKit
 //
 //  Created by Gordon Fontenot on 2/27/13.
-//  Copyright 2013 thoughtbot. All rights reserved.
+//  Copyright 2014 thoughtbot. All rights reserved.
 //
 
 #import "NSArray+Enumeration.h"

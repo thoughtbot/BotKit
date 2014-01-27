@@ -3,7 +3,7 @@
 //  BotKit
 //
 //  Created by Mark Adams on 5/11/13.
-//  Copyright (c) 2013 thoughtbot. All rights reserved.
+//  Copyright (c) 2014 thoughtbot. All rights reserved.
 //
 
 #import "NSArray+ObjectAccess.h"

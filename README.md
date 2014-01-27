@@ -31,4 +31,4 @@ BotKit is maintained by Mark Adams, Gordon Fontenot, Diana Zmuda and Theo Calmes
 
 The names and logos for thoughtbot are trademarks of thoughtbot, inc.
 
-BotKit is Copyright © 2012-2013 thoughtbot, inc. It is free software and may be re-distributed under the terms specified in the LICENSE file.
+BotKit is Copyright © 2012-2014 thoughtbot, inc. It is free software and may be re-distributed under the terms specified in the LICENSE file.

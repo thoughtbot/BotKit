@@ -1,5 +1,5 @@
 #_Warning_
-BotKit is deprecated as of 0.1.11. 0.1.10 is the last working version. This
+BotKit is deprecated as of 0.2. 0.1.10 is the last working version. This
 library will not longer be maintained.
 
 ---

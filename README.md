@@ -1,9 +1,12 @@
-# BotKit
-BotKit is a Cocoa Touch static library for use in iOS projects. It includes a number of helpful classes and categories that are useful during the development of an iOS application.
-
-##_Warning_
+#_Warning_
 BotKit is deprecated as of 0.1.11. 0.1.10 is the last working version. This
 library will not longer be maintained.
+
+---
+
+# BotKit
+
+BotKit is a Cocoa Touch static library for use in iOS projects. It includes a number of helpful classes and categories that are useful during the development of an iOS application.
 
 ## Installation
 

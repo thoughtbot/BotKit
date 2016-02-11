@@ -3,7 +3,7 @@ BotKit is a Cocoa Touch static library for use in iOS projects. It includes a nu
 
 ## Installation
 
-The fastest way to get started with BotKit in your project is by using [Cocoapods](https://cocoapods.org). 
+The fastest way to get started with BotKit in your project is by using [CocoaPods](https://cocoapods.org). 
 
 ### Add BotKit to your Podfile
 
